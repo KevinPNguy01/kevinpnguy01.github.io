@@ -1,4 +1,5 @@
 import './App.css';
+import { EaterEnrollment } from './components/EaterEnrollment';
 import { Intro } from './components/Intro';
 import { Languages } from './components/Lanuages';
 
@@ -7,6 +8,7 @@ function App() {
     <>
     <Intro/>
     <Languages/>
+    <EaterEnrollment/>
     </>
   );
 }
