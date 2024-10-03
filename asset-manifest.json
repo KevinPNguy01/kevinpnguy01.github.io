@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.6547be35.css",
-    "main.js": "/static/js/main.7469ffb1.js",
+    "main.js": "/static/js/main.af0515ae.js",
     "static/media/box_preview.png": "/static/media/box_preview.d896ea14b86da32e2f76.png",
+    "static/media/voxelgameengine.png": "/static/media/voxelgameengine.88507b560afd8aaafab2.png",
     "static/media/eaterenrollment.png": "/static/media/eaterenrollment.8b7a3027bcfa342a067d.png",
     "static/media/python.png": "/static/media/python.368ff420d152a71031c0.png",
     "static/media/java.png": "/static/media/java.65559c7081cb52053b13.png",
@@ -12,10 +13,10 @@
     "static/media/javascript.png": "/static/media/javascript.266bd9fb2663dcc057b4.png",
     "index.html": "/index.html",
     "main.6547be35.css.map": "/static/css/main.6547be35.css.map",
-    "main.7469ffb1.js.map": "/static/js/main.7469ffb1.js.map"
+    "main.af0515ae.js.map": "/static/js/main.af0515ae.js.map"
   },
   "entrypoints": [
     "static/css/main.6547be35.css",
-    "static/js/main.7469ffb1.js"
+    "static/js/main.af0515ae.js"
   ]
 }
