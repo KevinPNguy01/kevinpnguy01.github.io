@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.5d239fdb.css",
-    "main.js": "/static/js/main.1a163c50.js",
+    "main.css": "/static/css/main.328e4d61.css",
+    "main.js": "/static/js/main.ba4fc558.js",
     "static/media/box_preview.png": "/static/media/box_preview.d896ea14b86da32e2f76.png",
     "static/media/voxelgameengine.png": "/static/media/voxelgameengine.88507b560afd8aaafab2.png",
     "static/media/eaterenrollment.png": "/static/media/eaterenrollment.8b7a3027bcfa342a067d.png",
@@ -12,11 +12,11 @@
     "static/media/c.png": "/static/media/c.bbbbbabc8c191bfb99bf.png",
     "static/media/javascript.png": "/static/media/javascript.266bd9fb2663dcc057b4.png",
     "index.html": "/index.html",
-    "main.5d239fdb.css.map": "/static/css/main.5d239fdb.css.map",
-    "main.1a163c50.js.map": "/static/js/main.1a163c50.js.map"
+    "main.328e4d61.css.map": "/static/css/main.328e4d61.css.map",
+    "main.ba4fc558.js.map": "/static/js/main.ba4fc558.js.map"
   },
   "entrypoints": [
-    "static/css/main.5d239fdb.css",
-    "static/js/main.1a163c50.js"
+    "static/css/main.328e4d61.css",
+    "static/js/main.ba4fc558.js"
   ]
 }
