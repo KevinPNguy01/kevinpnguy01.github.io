@@ -3,6 +3,7 @@ import './App.css';
 import { EaterEnrollment } from './components/EaterEnrollment';
 import { Intro } from './components/Intro';
 import { Languages } from './components/Lanuages';
+import { MinecraftMod } from './components/MinecraftMod';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
     <Languages/>
     <Divider/>
     <EaterEnrollment/>
+    <MinecraftMod/>
     </>
   );
 }
