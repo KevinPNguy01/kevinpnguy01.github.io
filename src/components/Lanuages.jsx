@@ -1,6 +1,6 @@
 export function Languages() {
     return (
-        <div className="bg-green-500 flex flex-wrap justify-between h-[10%]">
+        <div className="flex flex-wrap justify-around h-[10%] mx-[5%] px-8">
             <img className="h-full" src={require('../assets/c.png')} alt="C"/>
             <img className="h-full" src={require('../assets/c++.png')} alt="C++"/>
             <img className="h-full" src={require('../assets/java.png')} alt="Java"/>

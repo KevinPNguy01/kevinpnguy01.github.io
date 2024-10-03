@@ -1,3 +1,4 @@
+import { Divider } from '@mui/material';
 import './App.css';
 import { EaterEnrollment } from './components/EaterEnrollment';
 import { Intro } from './components/Intro';
@@ -8,6 +9,7 @@ function App() {
     <>
     <Intro/>
     <Languages/>
+    <Divider/>
     <EaterEnrollment/>
     </>
   );
