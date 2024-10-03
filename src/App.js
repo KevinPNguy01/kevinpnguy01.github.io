@@ -10,16 +10,17 @@ import TerrainIcon from '@mui/icons-material/Terrain';
 import TextureIcon from '@mui/icons-material/Texture';
 import TransformIcon from '@mui/icons-material/Transform';
 import ViewInArIcon from '@mui/icons-material/ViewInAr';
-import { Divider } from '@mui/material';
+import { createTheme, Divider, ThemeProvider } from '@mui/material';
 import './App.css';
 import { FeatureCard } from './components/FeatureCard';
 import { Intro } from './components/Intro';
-import { Languages } from './components/Lanuages';
 import { Project } from './components/Project';
+import { SearchEngineProject } from './components/SearchEngineProject';
 
 function App() {
     return (
         <>
+        <div className="bg"></div>
         <Intro/>
         <Divider style={{backgroundColor: "#222"}}/>
         <Project 
@@ -58,6 +59,10 @@ function App() {
             <FeatureCard title="Chunk Management" text="Chunk-based rendering system dynamically loads and unloads chunks nearby the player." img={<GpsFixedIcon style={{ color: 'white' }}/>}/>
             <FeatureCard title="Performance Optimizations" text="Techniques such as frustum culling and face culling enhance performance." img={<SettingsSuggestIcon style={{ color: 'white' }}/>}/>
         </Project>
+        <div className="w-full flex justify-center">
+            <Divider style={{backgroundColor: "#444", width: "90%"}}/>
+        </div>
+        <SearchEngineProject/>
         </>
     );
 }
