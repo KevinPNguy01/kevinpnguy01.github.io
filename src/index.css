@@ -18,3 +18,7 @@ body {
     width: 100vw;
     z-index:-1;
 }
+
+.MuiButtonBase-root {
+    text-transform: none !important;
+}

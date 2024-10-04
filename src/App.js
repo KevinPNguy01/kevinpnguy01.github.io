@@ -26,6 +26,8 @@ function App() {
         <Project 
             title="Eater Enrollment" 
             description="Search for courses and manage class schedules at UCI."
+            repoName="Eater-Enrollment"
+            repoLink="https://github.com/KevinPNguy01/Eater-Enrollment"
             img={<img src={require("./assets/eaterenrollment.png")} alt="Eater Enrollment screenshot"/>}
         >
             <FeatureCard title="Course Lookup" text="Search for courses across multiple quarters and view details such as availability and descriptions." img={<SearchIcon style={{ color: 'white' }}/>}/>
@@ -40,6 +42,8 @@ function App() {
         <Project 
             title="Minecraft 3D Model Importer" 
             description="A Minecraft mod that allows you to import, transform, and place 3D Models into your worlds."
+            repoName="MC-3D-Model-Importer"
+            repoLink="https://github.com/KevinPNguy01/MC-3D-Model-Importer"
             img={<img src={require('./assets/box_preview.png')} alt="Mod preview screenshot"/>}
         >
             <FeatureCard title="Graphical Preview" text="A real-time voxelized preview makes it easy to visualize the model and see where it would be placed." img={<ViewInArIcon style={{ color: 'white' }}/>}/>
@@ -52,6 +56,8 @@ function App() {
         <Project 
             title="Voxel Game Engine" 
             description="A Minecraft-inspired voxel game written in C++ and using OpenGL."
+            repoName="Voxel-Game-Engine"
+            repoLink="https://github.com/KevinPNguy01/Voxel-Game-Engine"
             img={<img src={require("./assets/voxelgameengine.png")} alt="In-game screenshot"/>}
         >
             <FeatureCard title="Infinite Terrain" text="Infinite procedurally generated terrain using perlin noise." img={<TerrainIcon style={{ color: 'white' }}/>}/>
