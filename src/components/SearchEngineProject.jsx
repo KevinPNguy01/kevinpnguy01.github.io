@@ -12,6 +12,9 @@ import TextFieldsIcon from '@mui/icons-material/TextFields';
 import BarChartIcon from '@mui/icons-material/BarChart';
 import PsychologyIcon from '@mui/icons-material/Psychology';
 import BoltIcon from '@mui/icons-material/Bolt';
+import MergeIcon from '@mui/icons-material/Merge';
+import ScreenSearchDesktopIcon from '@mui/icons-material/ScreenSearchDesktop';
+import StorageIcon from '@mui/icons-material/Storage';
 import { FeatureList } from "./FeatureList";
 
 export function SearchEngineProject() {
@@ -56,13 +59,16 @@ export function SearchEngineProject() {
             {value === 1 && <FeatureList>
                 <FeatureCard title="Multiprocessing" text="Utilizes multiple processes to index multiple web pages at once." img={<LayersIcon style={{color: "white"}}/>}/>
                 <FeatureCard title="Partial Indexing" text="Indexed content is regularly written to files and combined at the end, minimizing memory usage." img={<MemoryIcon style={{color: "white"}}/>}/>
-                <FeatureCard title="N-gram Indexing" text="Breaks text into n-grams, enabling more flexible and precise query matching." img={<TextFieldsIcon style={{color: "white"}}/>}/>
+                <FeatureCard title="N-gram Indexing" text="Breaks text into n-grams, enabling more flexible and relevant query matching." img={<TextFieldsIcon style={{color: "white"}}/>}/>
                 <FeatureCard title="Pauseable Indexing" text="Allows indexing to be stopped and resumed at any time without loss of progress." img={<PauseIcon style={{color: "white"}}/>}/>
+                <FeatureCard title="Recursive Index" text="The index of tokens is indexed itself, allowing tokens to be looked up faster." img={<StorageIcon style={{color: "white"}}/>}/>
             </FeatureList>}
             {value === 2 && <FeatureList>
                 <FeatureCard title="Ranking" text="Results are ranked by a combination of keyword frequency and placement in the webpage." img={<BarChartIcon style={{color: "white"}}/>}/>
                 <FeatureCard title="AI Summary" text="Generates concise summaries of search results using OpenAI's GPT-3.5." img={<PsychologyIcon style={{color: "white"}}/>}/>
+                <FeatureCard title="Token Stemming" text="Reduces words to their root forms, improving the precision of search results." img={<MergeIcon style={{color: "white"}}/>}/>
                 <FeatureCard title="Fast Results" text="Results take only a few milliseconds for an index of 55,000 web pages." img={<BoltIcon style={{color: "white"}}/>}/>
+                <FeatureCard title="Graphical Interface" text="Enter queries into a searchbox and view results in a clean, interactive layout." img={<ScreenSearchDesktopIcon style={{color: "white"}}/>}/>
             </FeatureList>}
         </div>
     )
