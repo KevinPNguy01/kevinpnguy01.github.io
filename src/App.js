@@ -10,7 +10,7 @@ import TerrainIcon from '@mui/icons-material/Terrain';
 import TextureIcon from '@mui/icons-material/Texture';
 import TransformIcon from '@mui/icons-material/Transform';
 import ViewInArIcon from '@mui/icons-material/ViewInAr';
-import { createTheme, Divider, ThemeProvider } from '@mui/material';
+import { Divider } from '@mui/material';
 import './App.css';
 import { FeatureCard } from './components/FeatureCard';
 import { Intro } from './components/Intro';
