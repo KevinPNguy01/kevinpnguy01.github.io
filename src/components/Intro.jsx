@@ -1,4 +1,4 @@
-import { IconButton } from "@mui/material";
+import { Button, IconButton } from "@mui/material";
 import { Languages } from "./Lanuages";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -24,6 +24,10 @@ export function Intro() {
                     <IconButton target="_blank" href="https://www.instagram.com/kevinpnguy/">
                         <InstagramIcon style={{color: "white"}}/>
                     </IconButton>
+                </div>
+                <div className="grid grid-cols-2 gap-4 lg:gap-8 lg:w-1/4 py-4">
+                    <Button className="!rounded-full !font-semibold !border-2" variant="outlined" target="_blank" href="https://drive.google.com/file/d/17ADWxamoleud6c1fuwy3iqPqQ7d96nK0/view?usp=sharing">Resume</Button>
+                    <Button className="!rounded-full bg-gradient-to-br from-blue-500 to-blue-600" variant="contained" href="mailto: kevinpnguy01@gmail.com">Hire Me</Button>
                 </div>
             </div>
             <Languages/>
