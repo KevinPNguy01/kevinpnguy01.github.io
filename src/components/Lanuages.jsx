@@ -2,7 +2,7 @@ import { Language } from './Language';
 import { Divider } from '@mui/material';
 
 export function Languages() {
-    const languageClasses = "h-16 lg:h-24";
+    const languageClasses = "h-16 md:h-24";
     
     return (
         <>
@@ -11,11 +11,11 @@ export function Languages() {
                 <h2 className="text-white text-4xl font-bold text-center">
                     My Tech Stack
                 </h2>
-                <p className="w-full lg:w-[36%] px-8 text-neutral-400 text-center font-semibold text-lg">
+                <p className="w-full md:w-[36%] px-8 text-neutral-400 text-center font-semibold text-lg">
                     I like to work with a variety of languages and technologies. Here are the ones I'm most comfortable with.
                 </p>
             </div>
-            <div className="flex flex-wrap items-end justify-around gap-y-8 lg:gap-x-16 px-[10%]">
+            <div className="flex flex-wrap items-end justify-around gap-y-8 md:gap-x-16 px-[10%]">
                 <Language name="C">
                     <img className={languageClasses} src={require('../assets/c.png')} alt=""/>
                 </Language>
