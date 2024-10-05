@@ -597,6 +597,11 @@ video {
   flex-shrink: 0;
 }
 
+.select-none {
+  -webkit-user-select: none;
+          user-select: none;
+}
+
 .snap-x {
   scroll-snap-type: x var(--tw-scroll-snap-strictness);
 }
@@ -844,10 +849,6 @@ body {
     display: grid;
   }
 
-  .lg\:w-1\/2 {
-    width: 50%;
-  }
-
   .lg\:w-fit {
     width: fit-content;
   }
@@ -870,5 +871,13 @@ body {
 
   .lg\:items-center {
     align-items: center;
+  }
+
+  .lg\:border-transparent {
+    border-color: transparent;
+  }
+
+  .lg\:bg-transparent {
+    background-color: transparent;
   }
 }

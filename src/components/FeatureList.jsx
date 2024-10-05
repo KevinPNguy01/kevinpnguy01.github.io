@@ -23,7 +23,7 @@ export function FeatureList(props) {
             {props.children.map((child, index) => (
                 <div 
                     key={index} 
-                    className={`transition-[background-color,border-color] border ease-linear duration-200 w-2/3 lg:w-full snap-start shrink-0 rounded-xl bg-opacity-10 ${index === focus ? "bg-neutral-500 border-neutral-500" : "border-transparent"}`}
+                    className={`transition-[background-color,border-color] border ease-linear duration-200 w-2/3 lg:w-full snap-start shrink-0 rounded-xl bg-opacity-10 lg:bg-transparent lg:border-transparent ${index === focus ? "bg-neutral-500 border-neutral-500" : "border-transparent"}`}
                     onClick={e => {
                         if (ref.current.clientWidth < ref.current.scrollWidth) {
                             e.currentTarget.scrollIntoView({behavior: "smooth", block: "nearest"});
