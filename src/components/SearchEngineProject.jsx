@@ -17,11 +17,12 @@ import ScreenSearchDesktopIcon from '@mui/icons-material/ScreenSearchDesktop';
 import StorageIcon from '@mui/icons-material/Storage';
 import { FeatureList } from "./FeatureList";
 import { GitHubRepoButton } from "./GitHubRepoButton";
+import { TechChip } from "./TechChip";
 
 export function SearchEngineProject() {
     const [value, setValue] = useState(0);
     return (
-        <section className="p-[5%] flex flex-wrap lg:grid lg:grid-cols-2 gap-8 items-center">
+        <section className="p-[5%] flex flex-wrap md:grid md:grid-cols-2 gap-8 items-center">
             <div className="w-full flex flex-col gap-2">
                 <div className="flex flex-col gap-2">
                     <h2 className="text-white font-bold text-4xl">
@@ -76,6 +77,12 @@ export function SearchEngineProject() {
             <div className="flex flex-col gap-8 items-center">
                 <div className="border border-neutral-500 bg-neutral-900 rounded-xl p-4 h-fit w-fit bg-gradient-to-br from-neutral-800 to-neutral-900">
                     <img src={require("../assets/searchengine.png")} alt="Search engine screenshot"/>
+                </div>
+                <div className="flex flex-wrap gap-2 justify-center">
+                    <TechChip label="Python"/>
+                    <TechChip label="Streamlit"/>
+                    <TechChip label="Requests"/>
+                    <TechChip label="OpenAI"/>
                 </div>
                 <GitHubRepoButton name="Web-Crawler-Search-Engine" link="https://github.com/KevinPNguy01/Web-Crawler-Search-Engine"/>
             </div>

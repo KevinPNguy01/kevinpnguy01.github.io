@@ -16,6 +16,7 @@ import { FeatureCard } from './components/FeatureCard';
 import { Intro } from './components/Intro';
 import { Project } from './components/Project';
 import { SearchEngineProject } from './components/SearchEngineProject';
+import { TechChip } from './components/TechChip';
 
 function App() {
     return (
@@ -29,6 +30,14 @@ function App() {
             repoName="Eater-Enrollment"
             repoLink="https://github.com/KevinPNguy01/Eater-Enrollment"
             img={<img src={require("./assets/eaterenrollment.png")} alt="Eater Enrollment screenshot"/>}
+            tags={<>
+                <TechChip label="React"/>
+                <TechChip label="TypeScript"/>
+                <TechChip label="Tailwind CSS"/>
+                <TechChip label="Redux"/>
+                <TechChip label="GraphQL"/>
+                <TechChip label="Firebase"/>
+            </>}
         >
             <FeatureCard title="Course Lookup" text="Search for courses across multiple quarters and view details such as availability and descriptions." img={<SearchIcon style={{ color: 'white' }}/>}/>
             <FeatureCard title="Search Refinement" text="Filter by numerous criteria such as meeting times and availability." img={<FilterAltIcon style={{ color: 'white' }}/>}/>
@@ -45,6 +54,11 @@ function App() {
             repoName="MC-3D-Model-Importer"
             repoLink="https://github.com/KevinPNguy01/MC-3D-Model-Importer"
             img={<img src={require('./assets/box_preview.png')} alt="Mod preview screenshot"/>}
+            tags={<>
+                <TechChip label="Java"/>
+                <TechChip label="Forge"/>
+                <TechChip label="Gradle"/>
+            </>}
         >
             <FeatureCard title="Graphical Preview" text="A real-time voxelized preview makes it easy to visualize the model and see where it would be placed." img={<ViewInArIcon style={{ color: 'white' }}/>}/>
             <FeatureCard title="Texture Mapping" text="Model textures are mapped by matching pixels to the visually most similar blocks." img={<TextureIcon style={{ color: 'white' }}/>}/>
@@ -59,6 +73,12 @@ function App() {
             repoName="Voxel-Game-Engine"
             repoLink="https://github.com/KevinPNguy01/Voxel-Game-Engine"
             img={<img src={require("./assets/voxelgameengine.png")} alt="In-game screenshot"/>}
+            tags={<>
+                <TechChip label="C++"/>
+                <TechChip label="OpenGL"/>
+                <TechChip label="GLSL"/>
+                <TechChip label="GLFW"/>
+            </>}
         >
             <FeatureCard title="Infinite Terrain" text="Infinite procedurally generated terrain using perlin noise." img={<TerrainIcon style={{ color: 'white' }}/>}/>
             <FeatureCard title="Break/Place Blocks" text="Block placing and breaking mechanics using raycasting." img={<EditIcon style={{ color: 'white' }}/>}/>

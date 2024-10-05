@@ -561,8 +561,8 @@ video {
   display: grid;
 }
 
-.h-24 {
-  height: 6rem;
+.h-16 {
+  height: 4rem;
 }
 
 .h-\[100vh\] {
@@ -575,14 +575,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.h-12 {
-  height: 3rem;
-}
-
-.h-16 {
-  height: 4rem;
 }
 
 .w-1\/3 {
@@ -599,14 +591,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-1\/2 {
-  width: 50%;
-}
-
-.\!w-8 {
-  width: 2rem !important;
 }
 
 .shrink-0 {
@@ -654,10 +638,6 @@ video {
   flex-wrap: nowrap;
 }
 
-.items-start {
-  align-items: flex-start;
-}
-
 .items-end {
   align-items: flex-end;
 }
@@ -674,10 +654,6 @@ video {
   justify-content: space-around;
 }
 
-.gap-16 {
-  gap: 4rem;
-}
-
 .gap-2 {
   gap: 0.5rem;
 }
@@ -690,16 +666,16 @@ video {
   gap: 2rem;
 }
 
-.gap-y-16 {
-  row-gap: 4rem;
-}
-
 .gap-y-8 {
   row-gap: 2rem;
 }
 
 .overflow-x-auto {
   overflow-x: auto;
+}
+
+.\!rounded-full {
+  border-radius: 9999px !important;
 }
 
 .rounded-full {
@@ -710,8 +686,8 @@ video {
   border-radius: 0.75rem;
 }
 
-.\!rounded-full {
-  border-radius: 9999px !important;
+.\!border-2 {
+  border-width: 2px !important;
 }
 
 .border {
@@ -722,8 +698,12 @@ video {
   border-width: 2px;
 }
 
-.\!border-2 {
-  border-width: 2px !important;
+.\!border {
+  border-width: 1px !important;
+}
+
+.\!border-solid {
+  border-style: solid !important;
 }
 
 .border-neutral-500 {
@@ -738,6 +718,11 @@ video {
 
 .border-transparent {
   border-color: transparent;
+}
+
+.\!border-neutral-500 {
+  --tw-border-opacity: 1 !important;
+  border-color: rgb(115 115 115 / var(--tw-border-opacity)) !important;
 }
 
 .bg-neutral-500 {
@@ -790,38 +775,14 @@ video {
   padding: 5%;
 }
 
-.p-8 {
-  padding: 2rem;
-}
-
-.px-\[10\%\] {
-  padding-left: 10%;
-  padding-right: 10%;
-}
-
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
 }
 
-.\!px-4 {
-  padding-left: 1rem !important;
-  padding-right: 1rem !important;
-}
-
-.\!px-8 {
-  padding-left: 2rem !important;
-  padding-right: 2rem !important;
-}
-
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+.px-\[10\%\] {
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .py-4 {
@@ -858,16 +819,16 @@ video {
   line-height: 1.25rem;
 }
 
+.\!font-semibold {
+  font-weight: 600 !important;
+}
+
 .font-bold {
   font-weight: 700;
 }
 
 .font-semibold {
   font-weight: 600;
-}
-
-.\!font-semibold {
-  font-weight: 600 !important;
 }
 
 .text-neutral-400 {
@@ -878,11 +839,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-neutral-500 {
-  --tw-text-opacity: 1;
-  color: rgb(115 115 115 / var(--tw-text-opacity));
 }
 
 .transition-\[background-color\2c border-color\] {
@@ -923,100 +879,70 @@ body {
   text-transform: none !important;
 }
 
-@media (min-width: 1024px) {
-  .lg\:flex {
+@media (min-width: 768px) {
+  .md\:flex {
     display: flex;
   }
 
-  .lg\:grid {
+  .md\:grid {
     display: grid;
   }
 
-  .lg\:h-24 {
+  .md\:h-24 {
     height: 6rem;
   }
 
-  .lg\:w-fit {
-    width: fit-content;
-  }
-
-  .lg\:w-full {
-    width: 100%;
-  }
-
-  .lg\:w-1\/2 {
-    width: 50%;
-  }
-
-  .lg\:w-1\/3 {
+  .md\:w-1\/3 {
     width: 33.333333%;
   }
 
-  .lg\:w-\[40\%\] {
-    width: 40%;
-  }
-
-  .lg\:w-\[35\%\] {
-    width: 35%;
-  }
-
-  .lg\:w-\[36\%\] {
+  .md\:w-\[36\%\] {
     width: 36%;
   }
 
-  .lg\:w-1\/4 {
-    width: 25%;
+  .md\:w-fit {
+    width: fit-content;
   }
 
-  .lg\:grid-cols-2 {
+  .md\:w-full {
+    width: 100%;
+  }
+
+  .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .lg\:flex-col {
+  .md\:flex-col {
     flex-direction: column;
   }
 
-  .lg\:flex-nowrap {
+  .md\:flex-nowrap {
     flex-wrap: nowrap;
   }
 
-  .lg\:items-center {
+  .md\:items-center {
     align-items: center;
   }
 
-  .lg\:gap-16 {
-    gap: 4rem;
-  }
-
-  .lg\:gap-8 {
+  .md\:gap-8 {
     gap: 2rem;
   }
 
-  .lg\:gap-x-16 {
+  .md\:gap-x-16 {
     column-gap: 4rem;
   }
 
-  .lg\:whitespace-pre {
-    white-space: pre;
-  }
-
-  .lg\:whitespace-pre-line {
-    white-space: pre-line;
-  }
-
-  .lg\:whitespace-pre-wrap {
-    white-space: pre-wrap;
-  }
-
-  .lg\:whitespace-break-spaces {
-    white-space: break-spaces;
-  }
-
-  .lg\:border-transparent {
+  .md\:border-transparent {
     border-color: transparent;
   }
 
-  .lg\:bg-transparent {
+  .md\:bg-transparent {
     background-color: transparent;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:w-1\/4 {
+    width: 25%;
   }
 }
