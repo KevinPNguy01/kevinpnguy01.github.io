@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.09e76a9c.css",
-    "main.js": "/static/js/main.47cd01ae.js",
+    "main.js": "/static/js/main.82f5a684.js",
     "static/media/box_preview.png": "/static/media/box_preview.d896ea14b86da32e2f76.png",
     "static/media/voxelgameengine.png": "/static/media/voxelgameengine.88507b560afd8aaafab2.png",
-    "static/media/searchengine.png": "/static/media/searchengine.0db141abafab73d1890e.png",
+    "static/media/searchengine.png": "/static/media/searchengine.15e0eda0c33def9950f9.png",
     "static/media/eaterenrollment.png": "/static/media/eaterenrollment.8b7a3027bcfa342a067d.png",
     "static/media/redux.png": "/static/media/redux.1b4bb5fceb01b19da59d.png",
     "static/media/python.png": "/static/media/python.368ff420d152a71031c0.png",
@@ -17,10 +17,10 @@
     "static/media/react.png": "/static/media/react.cb15bfce2a9004ce61c5.png",
     "index.html": "/index.html",
     "main.09e76a9c.css.map": "/static/css/main.09e76a9c.css.map",
-    "main.47cd01ae.js.map": "/static/js/main.47cd01ae.js.map"
+    "main.82f5a684.js.map": "/static/js/main.82f5a684.js.map"
   },
   "entrypoints": [
     "static/css/main.09e76a9c.css",
-    "static/js/main.47cd01ae.js"
+    "static/js/main.82f5a684.js"
   ]
 }
