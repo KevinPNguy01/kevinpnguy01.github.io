@@ -1,7 +1,7 @@
 export function FeatureCard(props) {
     const {img, title, text} = props;
     return (
-        <div className="w-full md:flex grid grid-rows-[1fr_2fr] md:flex-nowrap shrink-0 items-end md:items-center gap-4 p-4 select-none">
+        <div className="w-full flex flex-col md:flex-row md:flex-nowrap shrink-0 gap-4 p-4 select-none">
             <div className="p-2 h-fit w-fit border-2 border-neutral-600 rounded-full bg-gradient-to-br from-neutral-800 to-neutral-900">
                 {img}
             </div>
