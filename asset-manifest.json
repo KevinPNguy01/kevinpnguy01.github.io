@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.826a866a.css",
-    "main.js": "/static/js/main.50992569.js",
+    "main.js": "/static/js/main.7deb2e41.js",
     "static/media/box_preview.png": "/static/media/box_preview.d896ea14b86da32e2f76.png",
     "static/media/voxelgameengine.png": "/static/media/voxelgameengine.88507b560afd8aaafab2.png",
-    "static/media/cornell_box.PNG": "/static/media/cornell_box.3a73388364a5dc2d5aec.PNG",
+    "static/media/cornell_box.PNG": "/static/media/cornell_box.a34bd5007de05e2ec158.PNG",
     "static/media/searchengine.png": "/static/media/searchengine.99933710601df2b1aaa8.png",
     "static/media/eaterenrollment.png": "/static/media/eaterenrollment.8b7a3027bcfa342a067d.png",
     "static/media/redux.png": "/static/media/redux.1b4bb5fceb01b19da59d.png",
@@ -18,10 +18,10 @@
     "static/media/react.png": "/static/media/react.cb15bfce2a9004ce61c5.png",
     "index.html": "/index.html",
     "main.826a866a.css.map": "/static/css/main.826a866a.css.map",
-    "main.50992569.js.map": "/static/js/main.50992569.js.map"
+    "main.7deb2e41.js.map": "/static/js/main.7deb2e41.js.map"
   },
   "entrypoints": [
     "static/css/main.826a866a.css",
-    "static/js/main.50992569.js"
+    "static/js/main.7deb2e41.js"
   ]
 }
