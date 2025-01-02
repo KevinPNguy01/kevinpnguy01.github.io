@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.826a866a.css",
+    "main.js": "/static/js/main.49d93a57.js",
+    "static/media/box_preview.png": "/static/media/box_preview.d896ea14b86da32e2f76.png",
+    "static/media/voxelgameengine.png": "/static/media/voxelgameengine.88507b560afd8aaafab2.png",
+    "static/media/cornell_box.PNG": "/static/media/cornell_box.a34bd5007de05e2ec158.PNG",
+    "static/media/searchengine.png": "/static/media/searchengine.99933710601df2b1aaa8.png",
+    "static/media/eaterenrollment.png": "/static/media/eaterenrollment.8b7a3027bcfa342a067d.png",
+    "static/media/ModelScope.PNG": "/static/media/ModelScope.61d0740bd54b075576c5.PNG",
+    "static/media/redux.png": "/static/media/redux.1b4bb5fceb01b19da59d.png",
+    "static/media/python.png": "/static/media/python.368ff420d152a71031c0.png",
+    "static/media/java.png": "/static/media/java.65559c7081cb52053b13.png",
+    "static/media/c++.png": "/static/media/c++.0fd9a8b06898bf6e6326.png",
+    "static/media/graphql.png": "/static/media/graphql.97ad2340ba7ddee3edf4.png",
+    "static/media/typescript.png": "/static/media/typescript.659e4b9351cf1baa6930.png",
+    "static/media/c.png": "/static/media/c.bbbbbabc8c191bfb99bf.png",
+    "static/media/tailwind.png": "/static/media/tailwind.48cd573a5e98236878ef.png",
+    "static/media/react.png": "/static/media/react.cb15bfce2a9004ce61c5.png",
+    "index.html": "/index.html",
+    "main.826a866a.css.map": "/static/css/main.826a866a.css.map",
+    "main.49d93a57.js.map": "/static/js/main.49d93a57.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.826a866a.css",
+    "static/js/main.49d93a57.js"
+  ]
+}
