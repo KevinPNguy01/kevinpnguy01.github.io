@@ -1,3 +1,4 @@
+import BuildIcon from '@mui/icons-material/Build';
 import DynamicFeedIcon from '@mui/icons-material/DynamicFeed';
 import EditIcon from '@mui/icons-material/Edit';
 import EventIcon from '@mui/icons-material/Event';
@@ -7,6 +8,7 @@ import InsertDriveFileIcon from '@mui/icons-material/InsertDriveFile';
 import LightbulbIcon from '@mui/icons-material/Lightbulb';
 import MapIcon from '@mui/icons-material/Map';
 import MouseIcon from '@mui/icons-material/Mouse';
+import PaletteIcon from '@mui/icons-material/Palette';
 import SearchIcon from '@mui/icons-material/Search';
 import SettingsSuggestIcon from '@mui/icons-material/SettingsSuggest';
 import TerrainIcon from '@mui/icons-material/Terrain';
@@ -35,11 +37,11 @@ function App() {
             repoLink="https://github.com/KevinPNguy01/Eater-Enrollment"
             img={<img src={require("./assets/eaterenrollment.png")} alt="Eater Enrollment screenshot"/>}
             tags={<>
+                <TechChip label="GraphQL"/>
                 <TechChip label="React"/>
                 <TechChip label="TypeScript"/>
                 <TechChip label="Tailwind CSS"/>
                 <TechChip label="Redux"/>
-                <TechChip label="GraphQL"/>
                 <TechChip label="Firebase"/>
             </>}
         >
@@ -48,6 +50,27 @@ function App() {
             <FeatureCard title="Multiple Schedules" text="Create and manage multiple schedules for different quarters." img={<DynamicFeedIcon style={{ color: 'white' }}/>}/>
             <FeatureCard title="Visual Interface" text="An intuitive calendar interface that supports both added courses and user-created events." img={<EventIcon style={{ color: 'white' }}/>}/>
             <FeatureCard title="Built-in Map" text="An integrated map to see where classes are and on which days." img={<MapIcon style={{ color: 'white' }}/>}/>
+        </Project>
+        <Project 
+            title="ModelScope3D" 
+            description="A lightweight 3D model editor developed with TypeScript and WebGL."
+            repoName="ModelScope3D"
+            repoLink="https://github.com/KevinPNguy01/ModelScope3D"
+            img={<img src={require("./assets/ModelScope.PNG")} alt="ModelScope3D screenshot"/>}
+            tags={<>
+                <TechChip label="WebGL"/>
+                <TechChip label="React"/>
+                <TechChip label="TypeScript"/>
+                <TechChip label="Tailwind CSS"/>
+                <TechChip label="Redux"/>
+                <TechChip label="Firebase"/>
+            </>}
+        >
+            <FeatureCard title="Configurable Lighting" text="Add and fine-tune multiple light sources to create the perfect scene." img={<LightbulbIcon style={{ color: 'white' }}/>}/>
+            <FeatureCard title="Textured Models" text="View your models with mapped textures in real time." img={<TextureIcon style={{ color: 'white' }}/>}/>
+            <FeatureCard title="Custom Materials" text="Configure material properties for models without textures." img={<PaletteIcon style={{ color: 'white' }}/>}/>
+            <FeatureCard title="Model Transformations" text="Apply precise transformations with versatile tools." img={<BuildIcon style={{ color: 'white' }}/>}/>
+            <FeatureCard title="File Conversion" text="Export models to other supported file formats." img={<InsertDriveFileIcon style={{ color: 'white' }}/>}/>
         </Project>
         <div className="w-full flex justify-center">
             <Divider style={{backgroundColor: "#444", width: "90%"}}/>
