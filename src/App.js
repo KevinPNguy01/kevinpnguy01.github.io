@@ -1,4 +1,6 @@
+import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import BuildIcon from '@mui/icons-material/Build';
+import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import DynamicFeedIcon from '@mui/icons-material/DynamicFeed';
 import EditIcon from '@mui/icons-material/Edit';
 import EventIcon from '@mui/icons-material/Event';
@@ -11,6 +13,8 @@ import MouseIcon from '@mui/icons-material/Mouse';
 import PaletteIcon from '@mui/icons-material/Palette';
 import SearchIcon from '@mui/icons-material/Search';
 import SettingsSuggestIcon from '@mui/icons-material/SettingsSuggest';
+import StorageIcon from '@mui/icons-material/Storage';
+import SyncIcon from '@mui/icons-material/Sync';
 import TerrainIcon from '@mui/icons-material/Terrain';
 import TextureIcon from '@mui/icons-material/Texture';
 import TransformIcon from '@mui/icons-material/Transform';
@@ -51,6 +55,31 @@ function App() {
             <FeatureCard title="Visual Interface" text="An intuitive calendar interface that supports both added courses and user-created events." img={<EventIcon style={{ color: 'white' }}/>}/>
             <FeatureCard title="Built-in Map" text="An integrated map to see where classes are and on which days." img={<MapIcon style={{ color: 'white' }}/>}/>
         </Project>
+        <div className="w-full flex justify-center">
+            <Divider style={{backgroundColor: "#444", width: "90%"}}/>
+        </div>
+        <Project 
+            title="Life Calendars" 
+            description="Visualize daily activity across Strava, LeetCode, and GitHub."
+            repoName="Life-Calendars"
+            repoLink="https://github.com/KevinPNguy01/Life-Calendars"
+            img={<img src={require("./assets/life_calendars.png")} alt="Life Calendars screenshot"/>}
+            tags={<>
+                <TechChip label="GraphQL"/>
+                <TechChip label="React"/>
+                <TechChip label="TypeScript"/>
+                <TechChip label="Tailwind CSS"/>
+                <TechChip label="Firebase"/>
+            </>}
+        >
+            <FeatureCard title="Visual Calendars" text="Visualize data in a colorful and streamlined calendar interface." img={<CalendarMonthIcon style={{ color: 'white' }}/>}/>
+            <FeatureCard title="Configurable Timespan" text="Compare progress across the years by selecting the desired year." img={<AccessTimeIcon style={{ color: 'white' }}/>}/>
+            <FeatureCard title="Synced Data" text="Data is synced on refresh to ensure it is accurate and up-to-date." img={<SyncIcon style={{ color: 'white' }}/>}/>
+            <FeatureCard title="Data Caching" text="Caching is used to reduce the number of API calls needed." img={<StorageIcon style={{ color: 'white' }}/>}/>
+        </Project>
+        <div className="w-full flex justify-center">
+            <Divider style={{backgroundColor: "#444", width: "90%"}}/>
+        </div>
         <Project 
             title="ModelScope3D" 
             description="A lightweight 3D model editor developed with TypeScript and WebGL."
