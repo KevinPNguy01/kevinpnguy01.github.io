@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.bbf9269e.css",
-    "main.js": "/static/js/main.25d7df14.js",
+    "main.css": "/static/css/main.94f9f875.css",
+    "main.js": "/static/js/main.94914348.js",
     "static/media/box_preview.png": "/static/media/box_preview.d896ea14b86da32e2f76.png",
     "static/media/voxelgameengine.png": "/static/media/voxelgameengine.88507b560afd8aaafab2.png",
     "static/media/cornell_box.PNG": "/static/media/cornell_box.a34bd5007de05e2ec158.PNG",
@@ -20,11 +20,11 @@
     "static/media/tailwind.png": "/static/media/tailwind.48cd573a5e98236878ef.png",
     "static/media/react.png": "/static/media/react.cb15bfce2a9004ce61c5.png",
     "index.html": "/index.html",
-    "main.bbf9269e.css.map": "/static/css/main.bbf9269e.css.map",
-    "main.25d7df14.js.map": "/static/js/main.25d7df14.js.map"
+    "main.94f9f875.css.map": "/static/css/main.94f9f875.css.map",
+    "main.94914348.js.map": "/static/js/main.94914348.js.map"
   },
   "entrypoints": [
-    "static/css/main.bbf9269e.css",
-    "static/js/main.25d7df14.js"
+    "static/css/main.94f9f875.css",
+    "static/js/main.94914348.js"
   ]
 }
