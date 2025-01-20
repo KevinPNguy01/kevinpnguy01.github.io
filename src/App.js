@@ -1,6 +1,8 @@
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import BuildIcon from '@mui/icons-material/Build';
+import CakeIcon from '@mui/icons-material/Cake';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+import DirectionsRunIcon from '@mui/icons-material/DirectionsRun';
 import DynamicFeedIcon from '@mui/icons-material/DynamicFeed';
 import EditIcon from '@mui/icons-material/Edit';
 import EventIcon from '@mui/icons-material/Event';
@@ -100,6 +102,25 @@ function App() {
             <FeatureCard title="Custom Materials" text="Configure material properties for models without textures." img={<PaletteIcon style={{ color: 'white' }}/>}/>
             <FeatureCard title="Model Transformations" text="Apply precise transformations with versatile tools." img={<BuildIcon style={{ color: 'white' }}/>}/>
             <FeatureCard title="File Conversion" text="Export models to other supported file formats." img={<InsertDriveFileIcon style={{ color: 'white' }}/>}/>
+        </Project>
+        <div className="w-full flex justify-center">
+            <Divider style={{backgroundColor: "#444", width: "90%"}}/>
+        </div>
+        <Project 
+            title="Where did the Weeks Go?" 
+            description="A web app to visualize how many weeks you have in your life."
+            repoName="Where-did-the-Weeks-Go"
+            repoLink="https://github.com/KevinPNguy01/Where-did-the-Weeks-Go"
+            img={<img src={require("./assets/life_in_weeks.png")} alt="Where did the Weeks Go Screenshot"/>}
+            tags={<>
+                <TechChip label="React"/>
+                <TechChip label="TypeScript"/>
+                <TechChip label="Tailwind CSS"/>
+            </>}
+        >
+            <FeatureCard title="Personalized Lifespan" text="Enter in your own birthdate and life expectancy to see the weeks that represents your own life." img={<CakeIcon style={{ color: 'white' }}/>}/>
+            <FeatureCard title="Daily Activities" text="Input activities performed daily to see their impact on the weeks you have left." img={<DirectionsRunIcon style={{ color: 'white' }}/>}/>
+            <FeatureCard title="Custom Colors" text="Customize your calendar by setting colors for each daily activity." img={<PaletteIcon style={{ color: 'white' }}/>}/>
         </Project>
         <div className="w-full flex justify-center">
             <Divider style={{backgroundColor: "#444", width: "90%"}}/>

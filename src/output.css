@@ -862,7 +862,6 @@ body {
 }
 
 .bg {
-  background: rgb(0,0,16);
   background: linear-gradient(0deg, rgba(8,8,8,1) 0%, rgba(16,16,32,1) 100%);
   position: fixed;
   top: 0;
