@@ -4,7 +4,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import { Button, IconButton } from "@mui/material";
 import { useEffect, useState } from 'react';
-import { Languages } from "./Lanuages";
+import { LanguageList } from "./LanguageList";
 
 export function Intro() {
     const [opacity, setOpacity] = useState(1);
@@ -24,20 +24,20 @@ export function Intro() {
     return (
         <div className="flex flex-col gap-8 mb-8 w-full">
             <div className="h-screen w-full justify-center flex flex-col items-center gap-4">
-                <h1 className="text-white text-6xl font-bold">Kevin Nguy</h1>
-                <p className="text-white text-3xl font-semibold">Coder for fun</p>
+                <h1 className="text-white text-6xl text-center font-bold">Kevin Nguy</h1>
+                <p className="text-white text-3xl text-center font-semibold">Coder for fun</p>
                 <div>
                     <IconButton target="_blank" href="https://github.com/kevinpnguy01">
-                        <GitHubIcon style={{color: "white"}}/>
+                        <GitHubIcon/>
                     </IconButton>
                     <IconButton target="_blank" href="https://www.linkedin.com/in/knkevin/">
-                        <LinkedInIcon style={{color: "white"}}/>
+                        <LinkedInIcon/>
                     </IconButton>
                     <IconButton target="_blank" href="https://www.youtube.com/knkevin/">
-                        <YouTubeIcon style={{color: "white"}}/>
+                        <YouTubeIcon/>
                     </IconButton>
                     <IconButton target="_blank" href="https://www.instagram.com/kevinpnguy/">
-                        <InstagramIcon style={{color: "white"}}/>
+                        <InstagramIcon/>
                     </IconButton>
                 </div>
                 <div className="grid grid-cols-2 gap-4 md:gap-8 md:w-1/3 lg:w-1/4 py-4">
@@ -50,7 +50,7 @@ export function Intro() {
                     </svg>
                 </div>
             </div>
-            <Languages/>
+            <LanguageList/>
         </div>
     )
 }

@@ -55,25 +55,25 @@ export function SearchEngineProject() {
                     <Tab label="Search Engine"/>
                 </Tabs>
                 {value === 0 && <FeatureList>
-                    <FeatureCard title="Multithreading" text="Utilizes multiple threads to crawl multiple domains in parallel." img={<GestureIcon style={{color: "white"}}/>}/>
-                    <FeatureCard title="Stores Web Pages" text="Saves web page content into JSON files to be indexed later." img={<WysiwygIcon style={{color: "white"}}/>}/>
-                    <FeatureCard title="Politeness" text="Adheres to robots.txt and enforces a minimum delay between requests to the same domain." img={<TimerIcon style={{color: "white"}}/>}/>
-                    <FeatureCard title="Pauseable Crawling" text="Allows crawling to be stopped and resumed at any time without loss of progress." img={<PauseIcon style={{color: "white"}}/>}/>
-                    <FeatureCard title="Customizable Crawling" text="Uses a config file to configure seed URLs, allowable domains, and minimum politeness." img={<SettingsIcon style={{color: "white"}}/>}/>
+                    <FeatureCard title="Multithreading" text="Utilizes multiple threads to crawl multiple domains in parallel." img={<GestureIcon/>}/>
+                    <FeatureCard title="Stores Web Pages" text="Saves web page content into JSON files to be indexed later." img={<WysiwygIcon/>}/>
+                    <FeatureCard title="Politeness" text="Adheres to robots.txt and enforces a minimum delay between requests to the same domain." img={<TimerIcon/>}/>
+                    <FeatureCard title="Pauseable Crawling" text="Allows crawling to be stopped and resumed at any time without loss of progress." img={<PauseIcon/>}/>
+                    <FeatureCard title="Customizable Crawling" text="Uses a config file to configure seed URLs, allowable domains, and minimum politeness." img={<SettingsIcon/>}/>
                 </FeatureList>}
                 {value === 1 && <FeatureList>
-                    <FeatureCard title="Multiprocessing" text="Utilizes multiple processes to index multiple web pages at once." img={<LayersIcon style={{color: "white"}}/>}/>
-                    <FeatureCard title="Partial Indexing" text="Indexed content is regularly written to files and combined at the end, minimizing memory usage." img={<MemoryIcon style={{color: "white"}}/>}/>
-                    <FeatureCard title="N-gram Indexing" text="Breaks text into n-grams, enabling more flexible and relevant query matching." img={<TextFieldsIcon style={{color: "white"}}/>}/>
-                    <FeatureCard title="Pauseable Indexing" text="Allows indexing to be stopped and resumed at any time without loss of progress." img={<PauseIcon style={{color: "white"}}/>}/>
-                    <FeatureCard title="Recursive Index" text="The index of tokens is indexed itself, allowing tokens to be looked up faster." img={<StorageIcon style={{color: "white"}}/>}/>
+                    <FeatureCard title="Multiprocessing" text="Utilizes multiple processes to index multiple web pages at once." img={<LayersIcon/>}/>
+                    <FeatureCard title="Partial Indexing" text="Indexed content is regularly written to files and combined at the end, minimizing memory usage." img={<MemoryIcon/>}/>
+                    <FeatureCard title="N-gram Indexing" text="Breaks text into n-grams, enabling more flexible and relevant query matching." img={<TextFieldsIcon/>}/>
+                    <FeatureCard title="Pauseable Indexing" text="Allows indexing to be stopped and resumed at any time without loss of progress." img={<PauseIcon/>}/>
+                    <FeatureCard title="Recursive Index" text="The index of tokens is indexed itself, allowing tokens to be looked up faster." img={<StorageIcon/>}/>
                 </FeatureList>}
                 {value === 2 && <FeatureList>
-                    <FeatureCard title="Ranking" text="Results are ranked by a combination of keyword frequency and placement in the page content." img={<BarChartIcon style={{color: "white"}}/>}/>
-                    <FeatureCard title="AI Summary" text="Generates concise summaries of search results using OpenAI's GPT-3.5." img={<PsychologyIcon style={{color: "white"}}/>}/>
-                    <FeatureCard title="Token Stemming" text="Reduces words to their root forms, improving the precision of search results." img={<MergeIcon style={{color: "white"}}/>}/>
-                    <FeatureCard title="Fast Results" text="Results take only a few milliseconds for an index of 55,000 web pages." img={<BoltIcon style={{color: "white"}}/>}/>
-                    <FeatureCard title="Graphical Interface" text="Enter queries into a searchbox and view results in a clean, interactive layout." img={<ScreenSearchDesktopIcon style={{color: "white"}}/>}/>
+                    <FeatureCard title="Ranking" text="Results are ranked by a combination of keyword frequency and placement in the page content." img={<BarChartIcon/>}/>
+                    <FeatureCard title="AI Summary" text="Generates concise summaries of search results using OpenAI's GPT-3.5." img={<PsychologyIcon/>}/>
+                    <FeatureCard title="Token Stemming" text="Reduces words to their root forms, improving the precision of search results." img={<MergeIcon/>}/>
+                    <FeatureCard title="Fast Results" text="Results take only a few milliseconds for an index of 55,000 web pages." img={<BoltIcon/>}/>
+                    <FeatureCard title="Graphical Interface" text="Enter queries into a searchbox and view results in a clean, interactive layout." img={<ScreenSearchDesktopIcon/>}/>
                 </FeatureList>}
             </div>
             <div className="flex flex-col gap-8 items-center">
