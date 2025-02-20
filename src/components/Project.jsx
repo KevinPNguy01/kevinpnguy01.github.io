@@ -1,5 +1,7 @@
 import { FeatureList } from "./FeatureList";
 import { GitHubRepoButton } from "./GitHubRepoButton";
+import { TechChip } from "./TechChip";
+import { TechList } from "./TechList";
 
 export function Project(props) {
     const {title, description, imgSrc, imgAlt, children, repoName, repoLink, tags} = props;
@@ -20,9 +22,7 @@ export function Project(props) {
             </div>
             <div className="flex flex-col gap-8 items-center">
                 <img className="shadow-md shadow-black rounded-xl h-fit w-fit" src={imgSrc} alt={imgAlt}/>
-                <div className="flex flex-wrap gap-2 justify-center">
-                    {tags}
-                </div>
+                <TechList tags={tags}/>
                 <GitHubRepoButton name={repoName} link={repoLink}/>
             </div>
         </section>

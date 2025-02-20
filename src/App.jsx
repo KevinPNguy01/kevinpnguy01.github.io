@@ -49,14 +49,7 @@ function App() {
             repoLink="https://github.com/KevinPNguy01/Eater-Enrollment"
             imgSrc={EaterEnrollmentImg}
             imgAlt="Eater Enrollment screenshot"
-            tags={<>
-                <TechChip label="GraphQL"/>
-                <TechChip label="React"/>
-                <TechChip label="TypeScript"/>
-                <TechChip label="Tailwind CSS"/>
-                <TechChip label="Redux"/>
-                <TechChip label="Firebase"/>
-            </>}
+            tags={["React", "TypeScript", "GraphQL", "Redux", "Tailwind CSS"]}
         >
             <FeatureCard title="Course Lookup" text="Search for courses across multiple quarters and view details such as availability and descriptions." img={<SearchIcon style={{ color: 'white' }}/>}/>
             <FeatureCard title="Search Refinement" text="Filter by numerous criteria such as meeting times and availability." img={<FilterAltIcon style={{ color: 'white' }}/>}/>
@@ -74,13 +67,7 @@ function App() {
             repoLink="https://github.com/KevinPNguy01/Life-Calendars"
             imgSrc={LifeCalendarsImg}
             imgAlt="Life Calendars screenshot"
-            tags={<>
-                <TechChip label="GraphQL"/>
-                <TechChip label="React"/>
-                <TechChip label="TypeScript"/>
-                <TechChip label="Tailwind CSS"/>
-                <TechChip label="Firebase"/>
-            </>}
+            tags={["React", "TypeScript", "Tailwind CSS"]}
         >
             <FeatureCard title="Visual Calendars" text="Visualize data in a colorful and streamlined calendar interface." img={<CalendarMonthIcon style={{ color: 'white' }}/>}/>
             <FeatureCard title="Configurable Timespan" text="Compare progress across the years by selecting the desired year." img={<AccessTimeIcon style={{ color: 'white' }}/>}/>
@@ -97,14 +84,7 @@ function App() {
             repoLink="https://github.com/KevinPNguy01/ModelScope3D"
             imgSrc={ModelScope3DImg}
             imgAlt="ModelScope3D screenshot"
-            tags={<>
-                <TechChip label="WebGL"/>
-                <TechChip label="React"/>
-                <TechChip label="TypeScript"/>
-                <TechChip label="Tailwind CSS"/>
-                <TechChip label="Redux"/>
-                <TechChip label="Firebase"/>
-            </>}
+            tags={["WebGL", "React", "TypeScript", "TailwindCSS", "Redux"]}
         >
             <FeatureCard title="Configurable Lighting" text="Add and fine-tune multiple light sources to create the perfect scene." img={<LightbulbIcon style={{ color: 'white' }}/>}/>
             <FeatureCard title="Textured Models" text="View your models with mapped textures in real time." img={<TextureIcon style={{ color: 'white' }}/>}/>
@@ -122,11 +102,7 @@ function App() {
             repoLink="https://github.com/KevinPNguy01/Where-did-the-Weeks-Go"
             imgSrc={WhereDidTheWeeksGoImg}
             imgAlt="Where did the Weeks Go Screenshot"
-            tags={<>
-                <TechChip label="React"/>
-                <TechChip label="TypeScript"/>
-                <TechChip label="Tailwind CSS"/>
-            </>}
+            tags={["React", "TypeScript", "Tailwind CSS"]}
         >
             <FeatureCard title="Personalized Lifespan" text="Enter in your own birthdate and life expectancy to see the weeks that represents your own life." img={<CakeIcon style={{ color: 'white' }}/>}/>
             <FeatureCard title="Daily Activities" text="Input activities performed daily to see their impact on the weeks you have left." img={<DirectionsRunIcon style={{ color: 'white' }}/>}/>
@@ -142,10 +118,7 @@ function App() {
             repoLink="https://github.com/KevinPNguy01/Software-Ray-Tracer/tree/master"
             imgSrc={RayTracerImg}
             imgAlt="Cornell Box Render"
-            tags={<>
-                <TechChip label="C++"/>
-                <TechChip label="WinAPI"/>
-            </>}
+            tags={["C++", "WinAPI"]}
         >
             <FeatureCard title="Adaptive Resolution" text="Renders start at low quality and progressively doubles the sample quality when the camera is stationary." img={<ZoomInIcon style={{ color: 'white' }}/>}/>
             <FeatureCard title="Realistic Lighting" text="Support for numerous materials such as diffuse surfaces, reflective materials, and configurable light sources." img={<LightbulbIcon style={{ color: 'white' }}/>}/>
@@ -162,12 +135,7 @@ function App() {
             repoLink="https://github.com/KevinPNguy01/Voxel-Game-Engine"
             imgSrc={VoxelGameImg}
             imgAlt="In-game screenshot"
-            tags={<>
-                <TechChip label="C++"/>
-                <TechChip label="OpenGL"/>
-                <TechChip label="GLSL"/>
-                <TechChip label="GLFW"/>
-            </>}
+            tags={["C++", "OpenGL", "GLSL", "GLFW"]}
         >
             <FeatureCard title="Infinite Terrain" text="Infinite procedurally generated terrain using perlin noise." img={<TerrainIcon style={{ color: 'white' }}/>}/>
             <FeatureCard title="Break/Place Blocks" text="Block placing and breaking mechanics using raycasting." img={<EditIcon style={{ color: 'white' }}/>}/>
@@ -184,11 +152,7 @@ function App() {
             repoLink="https://github.com/KevinPNguy01/MC-3D-Model-Importer"
             imgSrc={MC3DModelImporter}
             imgAlt="Mod preview screenshot"
-            tags={<>
-                <TechChip label="Java"/>
-                <TechChip label="Forge"/>
-                <TechChip label="Gradle"/>
-            </>}
+            tags={["Java", "Forge", "Gradle"]}
         >
             <FeatureCard title="Graphical Preview" text="A real-time voxelized preview makes it easy to visualize the model and see where it would be placed." img={<ViewInArIcon style={{ color: 'white' }}/>}/>
             <FeatureCard title="Texture Mapping" text="Model textures are mapped by matching pixels to the visually most similar blocks." img={<TextureIcon style={{ color: 'white' }}/>}/>

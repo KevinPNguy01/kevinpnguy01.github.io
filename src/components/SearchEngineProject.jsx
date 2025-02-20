@@ -19,6 +19,7 @@ import { FeatureList } from "./FeatureList";
 import { GitHubRepoButton } from "./GitHubRepoButton";
 import { TechChip } from "./TechChip";
 import SearchEngineImg from "../assets/searchengine.png"
+import { TechList } from "./TechList";
 
 export function SearchEngineProject() {
     const [value, setValue] = useState(0);
@@ -77,12 +78,7 @@ export function SearchEngineProject() {
             </div>
             <div className="flex flex-col gap-8 items-center">
                 <img className="shadow-md shadow-black rounded-xl h-fit w-fit" src={SearchEngineImg} alt="Search engine screenshot"/>
-                <div className="flex flex-wrap gap-2 justify-center">
-                    <TechChip label="Python"/>
-                    <TechChip label="Streamlit"/>
-                    <TechChip label="Requests"/>
-                    <TechChip label="OpenAI"/>
-                </div>
+                <TechList tags={["Python", "OpenAI", "Streamlit", "Requests"]}/>
                 <GitHubRepoButton name="Web-Crawler-Search-Engine" link="https://github.com/KevinPNguy01/Web-Crawler-Search-Engine"/>
             </div>
         </section>
