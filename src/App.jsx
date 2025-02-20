@@ -23,12 +23,18 @@ import TransformIcon from '@mui/icons-material/Transform';
 import ViewInArIcon from '@mui/icons-material/ViewInAr';
 import ZoomInIcon from '@mui/icons-material/ZoomIn';
 import { Divider } from '@mui/material';
-import './App.css';
 import { FeatureCard } from './components/FeatureCard';
 import { Intro } from './components/Intro';
 import { Project } from './components/Project';
 import { SearchEngineProject } from './components/SearchEngineProject';
 import { TechChip } from './components/TechChip';
+import EaterEnrollmentImg from "./assets/eaterenrollment.png";
+import LifeCalendarsImg from "./assets/life_calendars.png";
+import ModelScope3DImg from "./assets/ModelScope.PNG";
+import WhereDidTheWeeksGoImg from "./assets/life_in_weeks.png";
+import RayTracerImg from "./assets/cornell_box.PNG";
+import VoxelGameImg from "./assets/voxelgameengine.png";
+import MC3DModelImporter from './assets/box_preview.png';
 
 function App() {
     return (
@@ -41,7 +47,8 @@ function App() {
             description="Search for courses and manage class schedules at UCI."
             repoName="Eater-Enrollment"
             repoLink="https://github.com/KevinPNguy01/Eater-Enrollment"
-            img={<img src={require("./assets/eaterenrollment.png")} alt="Eater Enrollment screenshot"/>}
+            imgSrc={EaterEnrollmentImg}
+            imgAlt="Eater Enrollment screenshot"
             tags={<>
                 <TechChip label="GraphQL"/>
                 <TechChip label="React"/>
@@ -65,7 +72,8 @@ function App() {
             description="Visualize daily activity across Strava, LeetCode, and GitHub."
             repoName="Life-Calendars"
             repoLink="https://github.com/KevinPNguy01/Life-Calendars"
-            img={<img src={require("./assets/life_calendars.png")} alt="Life Calendars screenshot"/>}
+            imgSrc={LifeCalendarsImg}
+            imgAlt="Life Calendars screenshot"
             tags={<>
                 <TechChip label="GraphQL"/>
                 <TechChip label="React"/>
@@ -87,7 +95,8 @@ function App() {
             description="A lightweight 3D model editor developed with TypeScript and WebGL."
             repoName="ModelScope3D"
             repoLink="https://github.com/KevinPNguy01/ModelScope3D"
-            img={<img src={require("./assets/ModelScope.PNG")} alt="ModelScope3D screenshot"/>}
+            imgSrc={ModelScope3DImg}
+            imgAlt="ModelScope3D screenshot"
             tags={<>
                 <TechChip label="WebGL"/>
                 <TechChip label="React"/>
@@ -111,7 +120,8 @@ function App() {
             description="A web app to visualize how many weeks you have in your life."
             repoName="Where-did-the-Weeks-Go"
             repoLink="https://github.com/KevinPNguy01/Where-did-the-Weeks-Go"
-            img={<img src={require("./assets/life_in_weeks.png")} alt="Where did the Weeks Go Screenshot"/>}
+            imgSrc={WhereDidTheWeeksGoImg}
+            imgAlt="Where did the Weeks Go Screenshot"
             tags={<>
                 <TechChip label="React"/>
                 <TechChip label="TypeScript"/>
@@ -130,7 +140,8 @@ function App() {
             description="A real-time path tracing engine developed in C++ and using the WinAPI."
             repoName="Software-Ray-Tracer"
             repoLink="https://github.com/KevinPNguy01/Software-Ray-Tracer/tree/master"
-            img={<img src={require("./assets/cornell_box.PNG")} alt="Cornell Box Render"/>}
+            imgSrc={RayTracerImg}
+            imgAlt="Cornell Box Render"
             tags={<>
                 <TechChip label="C++"/>
                 <TechChip label="WinAPI"/>
@@ -149,7 +160,8 @@ function App() {
             description="A Minecraft-inspired voxel game written in C++ and using OpenGL."
             repoName="Voxel-Game-Engine"
             repoLink="https://github.com/KevinPNguy01/Voxel-Game-Engine"
-            img={<img src={require("./assets/voxelgameengine.png")} alt="In-game screenshot"/>}
+            imgSrc={VoxelGameImg}
+            imgAlt="In-game screenshot"
             tags={<>
                 <TechChip label="C++"/>
                 <TechChip label="OpenGL"/>
@@ -170,7 +182,8 @@ function App() {
             description="A Minecraft mod that allows you to import, transform, and place 3D Models into your worlds."
             repoName="MC-3D-Model-Importer"
             repoLink="https://github.com/KevinPNguy01/MC-3D-Model-Importer"
-            img={<img src={require('./assets/box_preview.png')} alt="Mod preview screenshot"/>}
+            imgSrc={MC3DModelImporter}
+            imgAlt="Mod preview screenshot"
             tags={<>
                 <TechChip label="Java"/>
                 <TechChip label="Forge"/>

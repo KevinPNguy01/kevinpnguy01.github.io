@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 html {
     background-color: black;
@@ -24,4 +22,8 @@ body {
 
 .MuiButtonBase-root {
     text-transform: none !important;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }

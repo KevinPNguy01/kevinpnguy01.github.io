@@ -18,6 +18,7 @@ import StorageIcon from '@mui/icons-material/Storage';
 import { FeatureList } from "./FeatureList";
 import { GitHubRepoButton } from "./GitHubRepoButton";
 import { TechChip } from "./TechChip";
+import SearchEngineImg from "../assets/searchengine.png"
 
 export function SearchEngineProject() {
     const [value, setValue] = useState(0);
@@ -75,9 +76,7 @@ export function SearchEngineProject() {
                 </FeatureList>}
             </div>
             <div className="flex flex-col gap-8 items-center">
-                <div className="border border-neutral-500 bg-neutral-900 rounded-xl p-4 h-fit w-fit bg-gradient-to-br from-neutral-800 to-neutral-900">
-                    <img src={require("../assets/searchengine.png")} alt="Search engine screenshot"/>
-                </div>
+                <img className="shadow-md shadow-black rounded-xl h-fit w-fit" src={SearchEngineImg} alt="Search engine screenshot"/>
                 <div className="flex flex-wrap gap-2 justify-center">
                     <TechChip label="Python"/>
                     <TechChip label="Streamlit"/>
