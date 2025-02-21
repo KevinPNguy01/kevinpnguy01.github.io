@@ -23,18 +23,18 @@ import TransformIcon from '@mui/icons-material/Transform';
 import ViewInArIcon from '@mui/icons-material/ViewInAr';
 import ZoomInIcon from '@mui/icons-material/ZoomIn';
 import { Divider } from '@mui/material';
-import { FeatureCard } from './components/FeatureCard';
+import { FeatureCard } from './components/Projects/Features/FeatureCard';
 import { Intro } from './components/Intro';
-import { Project } from './components/Project';
-import { SearchEngineProject } from './components/SearchEngineProject';
-import { TechChip } from './components/TechChip';
-import EaterEnrollmentImg from "./assets/eaterenrollment.png";
-import LifeCalendarsImg from "./assets/life_calendars.png";
-import ModelScope3DImg from "./assets/ModelScope.PNG";
-import WhereDidTheWeeksGoImg from "./assets/life_in_weeks.png";
-import RayTracerImg from "./assets/cornell_box.PNG";
-import VoxelGameImg from "./assets/voxelgameengine.png";
-import MC3DModelImporter from './assets/box_preview.png';
+import { Project } from './components/Projects/Project';
+import { SearchEngineProject } from './components/Projects/SearchEngineProject';
+import { TechChip } from './components/Projects/TechStack/TechChip';
+import EaterEnrollmentImg from "/assets/eaterenrollment.png";
+import LifeCalendarsImg from "/assets/life_calendars.png";
+import ModelScope3DImg from "/assets/ModelScope.PNG";
+import WhereDidTheWeeksGoImg from "/assets/life_in_weeks.png";
+import RayTracerImg from "/assets/cornell_box.PNG";
+import VoxelGameImg from "/assets/voxelgameengine.png";
+import MC3DModelImporter from '/assets/box_preview.png';
 
 function App() {
     return (

@@ -1,6 +1,6 @@
 import { Tab, Tabs } from "@mui/material";
 import GestureIcon from '@mui/icons-material/Gesture';
-import { FeatureCard } from "./FeatureCard";
+import { FeatureCard } from "./Features/FeatureCard";
 import { useState } from "react";
 import WysiwygIcon from '@mui/icons-material/Wysiwyg';
 import TimerIcon from '@mui/icons-material/Timer';
@@ -15,11 +15,10 @@ import BoltIcon from '@mui/icons-material/Bolt';
 import MergeIcon from '@mui/icons-material/Merge';
 import ScreenSearchDesktopIcon from '@mui/icons-material/ScreenSearchDesktop';
 import StorageIcon from '@mui/icons-material/Storage';
-import { FeatureList } from "./FeatureList";
-import { GitHubRepoButton } from "./GitHubRepoButton";
-import { TechChip } from "./TechChip";
-import SearchEngineImg from "../assets/searchengine.png"
-import { TechList } from "./TechList";
+import { FeatureList } from "./Features/FeatureList";
+import { GitHubRepoButton } from "../GitHubRepoButton";
+import SearchEngineImg from "/assets/searchengine.png"
+import { TechList } from "./TechStack/TechList";
 
 export function SearchEngineProject() {
     const [value, setValue] = useState(0);

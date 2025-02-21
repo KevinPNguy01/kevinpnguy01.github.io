@@ -4,7 +4,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import { Button, IconButton } from "@mui/material";
 import { useEffect, useState } from 'react';
-import { LanguageList } from "./LanguageList";
+import { LanguageList } from "./Languages/LanguageList";
 
 export function Intro() {
     const [opacity, setOpacity] = useState(1);

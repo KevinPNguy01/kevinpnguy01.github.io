@@ -1,18 +1,18 @@
 import { Language } from './Language';
 import { Divider } from '@mui/material';
-import CLogo from "../assets/c.png";
-import CppLogo from "../assets/c++.png";
-import JavaLogo from "../assets/java.png";
-import JavaScriptLogo from "../assets/javascript.png";
-import TypeScriptLogo from "../assets/typescript.png";
-import PythonLogo from "../assets/python.png";
-import HtmlLogo from "../assets/html.png";
-import CssLogo from "../assets/css.png";
-import FirebaseLogo from "../assets/firebase.png";
-import GraphQLLogo from "../assets/graphql.png";
-import ReactLogo from "../assets/react.png";
-import ReduxLogo from "../assets/redux.png";
-import TailwindLogo from "../assets/tailwind.png";
+import CLogo from "/assets/c.png";
+import CppLogo from "/assets/c++.png";
+import JavaLogo from "/assets/java.png";
+import JavaScriptLogo from "/assets/javascript.png";
+import TypeScriptLogo from "/assets/typescript.png";
+import PythonLogo from "/assets/python.png";
+import HtmlLogo from "/assets/html.png";
+import CssLogo from "/assets/css.png";
+import FirebaseLogo from "/assets/firebase.png";
+import GraphQLLogo from "/assets/graphql.png";
+import ReactLogo from "/assets/react.png";
+import ReduxLogo from "/assets/redux.png";
+import TailwindLogo from "/assets/tailwind.png";
 
 const languages = [
     {name: "C", src: CLogo},

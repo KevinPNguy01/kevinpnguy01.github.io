@@ -1,7 +1,7 @@
-import { FeatureList } from "./FeatureList";
-import { GitHubRepoButton } from "./GitHubRepoButton";
-import { TechChip } from "./TechChip";
-import { TechList } from "./TechList";
+import { FeatureList } from "./Features/FeatureList";
+import { GitHubRepoButton } from "../GitHubRepoButton";
+import { TechChip } from "./TechStack/TechChip";
+import { TechList } from "./TechStack/TechList";
 
 export function Project(props) {
     const {title, description, imgSrc, imgAlt, children, repoName, repoLink, tags} = props;
