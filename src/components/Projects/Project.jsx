@@ -1,6 +1,5 @@
 import { FeatureList } from "./Features/FeatureList";
 import { GitHubRepoButton } from "../GitHubRepoButton";
-import { TechChip } from "./TechStack/TechChip";
 import { TechList } from "./TechStack/TechList";
 
 export function Project(props) {

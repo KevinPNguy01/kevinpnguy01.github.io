@@ -1,5 +1,3 @@
-import { Language } from './Language';
-import { Divider } from '@mui/material';
 import CLogo from "/assets/c.png";
 import CppLogo from "/assets/c++.png";
 import JavaLogo from "/assets/java.png";
@@ -30,10 +28,9 @@ const languages = [
     {name: "Tailwind CSS", src: TailwindLogo},
 ]
 
-export function LanguageList() {    
+export function SkilsSection() {
     return (
-        <>
-            <Divider style={{ backgroundColor: "#222" }} />
+        <section id="skills-section" className="flex flex-col py-16 gap-12">
             <div className="w-full flex flex-col items-center gap-2">
                 <h2 className="text-white text-4xl font-bold text-center">
                     My Tech Stack
@@ -45,6 +42,16 @@ export function LanguageList() {
             <div className="flex flex-wrap items-end justify-around gap-y-8 md:gap-x-16 px-[10%]">
                 {languages.map((lang, index) => <Language key={index} {...lang}/>)}
             </div>
-        </>
-    );
+        </section>
+    )
+}
+
+function Language(props) {
+    const {name, src} = props;
+    return (
+        <div className="w-1/3 md:w-fit flex flex-col gap-2 justify-center items-center">
+            <img className="h-16 md:h-24" src={src} alt={`${name} logo`}/>
+            <span className="text-white w-full text-center font-bold">{name}</span>
+        </div>
+    )
 }

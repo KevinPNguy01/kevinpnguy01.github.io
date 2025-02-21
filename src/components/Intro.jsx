@@ -4,7 +4,6 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import { Button, IconButton } from "@mui/material";
 import { useEffect, useState } from 'react';
-import { LanguageList } from "./Languages/LanguageList";
 
 export function Intro() {
     const [opacity, setOpacity] = useState(1);
@@ -22,7 +21,7 @@ export function Intro() {
     }, []);
 
     return (
-        <div className="flex flex-col gap-8 mb-8 w-full">
+        <div id="home-section" className="flex flex-col gap-8 mb-8 w-full">
             <div className="h-screen w-full justify-center flex flex-col items-center gap-4">
                 <h1 className="text-white text-6xl text-center font-bold">Kevin Nguy</h1>
                 <p className="text-white text-3xl text-center font-semibold">Coder for fun</p>
@@ -50,7 +49,6 @@ export function Intro() {
                     </svg>
                 </div>
             </div>
-            <LanguageList/>
         </div>
     )
 }
