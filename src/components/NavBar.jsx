@@ -31,7 +31,7 @@ export function NavBar() {
     }, []);
 
     return (
-        <AppBar ref={ref} className="w-screen! border-b border-white/8 bg-neutral-950/80! backdrop-blur-lg">
+        <AppBar ref={ref} className="w-full! border-b border-white/8 bg-neutral-950/80! backdrop-blur-lg">
             <Box className="w-full px-[15%] py-3 grid grid-cols-2 lg:grid-cols-3 place-items-center">
                 <h1
                     className="first:justify-self-start text-lg font-bold text-nowrap"
@@ -61,12 +61,14 @@ export function NavBar() {
                 <Box className="last:justify-self-end flex justify-end gap-4">
                     <Button
                         className="text-[13px]! font-semibold! text-neutral-500!"
+                        target="_blank" href="https://drive.google.com/file/d/17ADWxamoleud6c1fuwy3iqPqQ7d96nK0/view?usp=sharing"
                     >
-                        Resumes
+                        Resume
                     </Button>
                     <Button
-                        className="text-[13px]! font-semibold!"
+                        className="text-[13px]! font-semibold! bg-gradient-to-br from-blue-500 to-blue-600"
                         variant="contained"
+                        href="mailto: kevinpnguy01@gmail.com"
                     >
                         Contact
                     </Button>
