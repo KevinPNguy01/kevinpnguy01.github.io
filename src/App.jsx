@@ -43,10 +43,10 @@ function App() {
         <div className="bg"></div>
         <NavBar/>
         <Intro/>
-        <Divider style={{ backgroundColor: "#222" }} />
+        <Divider style={{ backgroundColor: "#444" }} />
         <SkilsSection/>
-        <Divider style={{backgroundColor: "#222"}}/>
-        <section id="projects-section">
+        <Divider style={{backgroundColor: "#444"}}/>
+        <section id="projects-section" className="flex flex-col py-8 gap-8">
             <Project 
                 title="Eater Enrollment" 
                 description="Search for courses and manage class schedules at UCI."
@@ -62,9 +62,7 @@ function App() {
                 <FeatureCard title="Visual Interface" text="An intuitive calendar interface that supports both added courses and user-created events." img={<EventIcon style={{ color: 'white' }}/>}/>
                 <FeatureCard title="Built-in Map" text="An integrated map to see where classes are and on which days." img={<MapIcon style={{ color: 'white' }}/>}/>
             </Project>
-            <div className="w-full flex justify-center">
-                <Divider style={{backgroundColor: "#444", width: "90%"}}/>
-            </div>
+            <Divider style={{backgroundColor: "#444", width: "90%"}}/>
             <Project 
                 title="Life Calendars" 
                 description="Visualize daily activity across Strava, LeetCode, and GitHub."
@@ -79,9 +77,7 @@ function App() {
                 <FeatureCard title="Synced Data" text="Data is synced on refresh to ensure it is accurate and up-to-date." img={<SyncIcon style={{ color: 'white' }}/>}/>
                 <FeatureCard title="Data Caching" text="Caching is used to reduce the number of API calls needed." img={<StorageIcon style={{ color: 'white' }}/>}/>
             </Project>
-            <div className="w-full flex justify-center">
-                <Divider style={{backgroundColor: "#444", width: "90%"}}/>
-            </div>
+            <Divider style={{backgroundColor: "#444", width: "90%"}}/>
             <Project 
                 title="ModelScope3D" 
                 description="A lightweight 3D model editor developed with TypeScript and WebGL."
@@ -97,9 +93,7 @@ function App() {
                 <FeatureCard title="Model Transformations" text="Apply precise transformations with versatile tools." img={<BuildIcon style={{ color: 'white' }}/>}/>
                 <FeatureCard title="File Conversion" text="Export models to other supported file formats." img={<InsertDriveFileIcon style={{ color: 'white' }}/>}/>
             </Project>
-            <div className="w-full flex justify-center">
-                <Divider style={{backgroundColor: "#444", width: "90%"}}/>
-            </div>
+            <Divider style={{backgroundColor: "#444", width: "90%"}}/>
             <Project 
                 title="Where did the Weeks Go?" 
                 description="A web app to visualize how many weeks you have in your life."
@@ -113,9 +107,7 @@ function App() {
                 <FeatureCard title="Daily Activities" text="Input activities performed daily to see their impact on the weeks you have left." img={<DirectionsRunIcon style={{ color: 'white' }}/>}/>
                 <FeatureCard title="Custom Colors" text="Customize your calendar by setting colors for each daily activity." img={<PaletteIcon style={{ color: 'white' }}/>}/>
             </Project>
-            <div className="w-full flex justify-center">
-                <Divider style={{backgroundColor: "#444", width: "90%"}}/>
-            </div>
+            <Divider style={{backgroundColor: "#444", width: "90%"}}/>
             <Project 
                 title="Real-time Ray Tracer" 
                 description="A real-time path tracing engine developed in C++ and using the WinAPI."
@@ -130,9 +122,7 @@ function App() {
                 <FeatureCard title="Interactivity" text="Keyboard and mouse controls allow for real-time camera positioning and rotation." img={<MouseIcon style={{ color: 'white' }}/>}/>
                 <FeatureCard title="Performance Optimizations" text="Leveraged multithreading to render jobs in parallel, resulting in a 10x speedup." img={<SettingsSuggestIcon style={{ color: 'white' }}/>}/>
             </Project>
-            <div className="w-full flex justify-center">
-                <Divider style={{backgroundColor: "#444", width: "90%"}}/>
-            </div>
+            <Divider style={{backgroundColor: "#444", width: "90%"}}/>
             <Project 
                 title="Voxel Game Engine" 
                 description="A Minecraft-inspired voxel game written in C++ and using OpenGL."
@@ -147,9 +137,7 @@ function App() {
                 <FeatureCard title="Chunk Management" text="Chunk-based rendering system dynamically loads and unloads chunks nearby the player." img={<GpsFixedIcon style={{ color: 'white' }}/>}/>
                 <FeatureCard title="Performance Optimizations" text="Techniques such as frustum culling and face culling enhance performance." img={<SettingsSuggestIcon style={{ color: 'white' }}/>}/>
             </Project>
-            <div className="w-full flex justify-center">
-                <Divider style={{backgroundColor: "#444", width: "90%"}}/>
-            </div>
+            <Divider style={{backgroundColor: "#444", width: "90%"}}/>
             <Project 
                 title="Minecraft 3D Model Importer" 
                 description="A Minecraft mod that allows you to import, transform, and place 3D Models into your worlds."
@@ -164,9 +152,7 @@ function App() {
                 <FeatureCard title="3D Transformations" text="Translate, rotate, and scale models in-game using intuitive mouse and keyboard controls." img={<TransformIcon style={{ color: 'white' }}/>}/>
                 <FeatureCard title="Multiple File Formats" text="Support for both the STL file format and OBJ file format with textures." img={<InsertDriveFileIcon style={{ color: 'white' }}/>}/>
             </Project>
-            <div className="w-full flex justify-center">
-                <Divider style={{backgroundColor: "#444", width: "90%"}}/>
-            </div>
+            <Divider style={{backgroundColor: "#444", width: "90%"}}/>
             <SearchEngineProject/>
         </section>
         </>

@@ -3,7 +3,9 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import { Button, IconButton } from "@mui/material";
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
+import CodeImg from "/assets/code_screenshot_faded.png";
+import { useWindowSize } from '../useWindowSize';
 
 export function Intro() {
     const [opacity, setOpacity] = useState(1);
@@ -20,11 +22,22 @@ export function Intro() {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
+    const ref = useRef();
+    const imageRef = useRef();
+
     return (
-        <div id="home-section" className="flex flex-col gap-8 mb-8 w-full">
-            <div className="h-screen w-full justify-center flex flex-col items-center gap-4">
-                <h1 className="text-white text-6xl text-center font-bold">Kevin Nguy</h1>
-                <p className="text-white text-3xl text-center font-semibold">Coder for fun</p>
+        <div 
+            id="home-section" 
+            className="pt-32 relative flex flex-col items-center md:items-start w-full"
+        >
+            <div ref={ref} className="justify-center flex flex-col items-start gap-4">
+                <h2 className="text-white text-lg font-semibold">Introduction</h2>
+                <h1 className="text-white text-6xl font-bold">Kevin Nguy</h1>
+                <p className="text-neutral-400 text-lg font-semibold whitespace-pre-line">
+                    {`I am a current third year studying computer science at UC Irvine.
+                    My interests include web development, artificial intelligence, 
+                    machine learning, and computer graphics.`}
+                </p>
                 <div>
                     <IconButton target="_blank" href="https://github.com/kevinpnguy01">
                         <GitHubIcon/>
@@ -39,15 +52,17 @@ export function Intro() {
                         <InstagramIcon/>
                     </IconButton>
                 </div>
-                <div className="grid grid-cols-2 gap-4 md:gap-8 md:w-1/3 lg:w-1/4 py-4">
-                    <Button className="!rounded-full !font-semibold !border-2" variant="outlined" target="_blank" href="https://drive.google.com/file/d/17ADWxamoleud6c1fuwy3iqPqQ7d96nK0/view?usp=sharing">Resume</Button>
-                    <Button className="!rounded-full bg-gradient-to-br from-blue-500 to-blue-600" variant="contained" href="mailto: kevinpnguy01@gmail.com">Hire Me</Button>
+                <div className="grid grid-cols-2 gap-4 w-48 md:gap-8 md:w-64 lg:w-72 py-4">
+                    <Button className="!rounded-lg bg-gradient-to-br from-blue-500 to-blue-600" variant="contained" href="mailto: kevinpnguy01@gmail.com">Contact</Button>
+                    <Button className="!rounded-lg !font-semibold !border-2" variant="outlined" target="_blank" href="https://drive.google.com/file/d/17ADWxamoleud6c1fuwy3iqPqQ7d96nK0/view?usp=sharing">Resume</Button>
                 </div>
-                <div className='absolute animate-bounce bottom-0 pb-4' style={{opacity}}>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="white" className="bi bi-chevron-compact-down" viewBox="0 0 16 16">
-                        <path fillRule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67"/>
-                    </svg>
-                </div>
+            </div>
+            <div className="w-full flex justify-center">
+                <img 
+                    className="max-w-[120vw] -translate-y-[15%]"
+                    ref={imageRef}
+                    src={CodeImg}
+                ></img>
             </div>
         </div>
     )

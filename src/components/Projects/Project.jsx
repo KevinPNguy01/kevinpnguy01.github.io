@@ -5,7 +5,7 @@ import { TechList } from "./TechStack/TechList";
 export function Project(props) {
     const {title, description, imgSrc, imgAlt, children, repoName, repoLink, tags} = props;
     return (
-        <section className="p-[5%] flex flex-wrap md:grid md:grid-cols-2 gap-8 items-center">
+        <section className="flex flex-wrap md:grid md:grid-cols-2 gap-8 items-center">
             <div className="w-full flex flex-col gap-2">
                 <div className="flex flex-col gap-2">
                     <h2 className="text-white font-bold text-4xl">

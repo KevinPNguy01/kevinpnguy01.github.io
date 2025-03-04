@@ -35,8 +35,9 @@ export function SkilsSection() {
                 <h2 className="text-white text-4xl font-bold text-center">
                     My Tech Stack
                 </h2>
-                <p className="w-full md:w-[36%] px-8 text-neutral-400 text-center font-semibold text-lg">
-                    I like to work with a variety of languages and technologies. Here are the ones I'm most comfortable with.
+                <p className="w-full px-8 text-neutral-400 text-center font-semibold text-lg text-nowrap whitespace-pre-line">
+                    {`I like to work with a variety of languages and technologies. 
+                    Here are the ones I'm most comfortable with.`}
                 </p>
             </div>
             <div className="flex flex-wrap items-end justify-around gap-y-8 md:gap-x-16 px-[10%]">

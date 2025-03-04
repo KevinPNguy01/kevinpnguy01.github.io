@@ -7,11 +7,12 @@ html {
 body {
     width: 100vw;
     height: 100vh;
+    padding: 0 15%;
     overflow: hidden scroll;
 }
 
 .bg {
-    background: linear-gradient(0deg, rgba(8,8,8,1) 0%, rgba(16,16,32,1) 100%);
+    background: radial-gradient( rgba(32,32,32,1) 0%, rgba(16,16,16,1) 100%);
     position: fixed;
     top: 0;
     left: 0;

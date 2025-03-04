@@ -23,7 +23,7 @@ import { TechList } from "./TechStack/TechList";
 export function SearchEngineProject() {
     const [value, setValue] = useState(0);
     return (
-        <section className="p-[5%] flex flex-wrap md:grid md:grid-cols-2 gap-8 items-center">
+        <section className="flex flex-wrap md:grid md:grid-cols-2 gap-8 items-center">
             <div className="w-full flex flex-col gap-2">
                 <div className="flex flex-col gap-2">
                     <h2 className="text-white font-bold text-4xl">
