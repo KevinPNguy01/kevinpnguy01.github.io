@@ -1,28 +1,50 @@
 import AppBar from '@mui/material/AppBar';
-import Toolbar from '@mui/material/Toolbar';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import MenuIcon from '@mui/icons-material/Menu';
+import IconButton from '@mui/material/IconButton'
 
 const sections = ["Home", "Skills", "Projects"];
 
 export function NavBar() {
     const ref = useRef();
+    const [currentSection, setCurrentSection] = useState(sections[0]);
+    
+    useEffect(() => {
+        const scrollListener = () => {
+            const navBarHeight = ref.current.getBoundingClientRect().height;
+            for (const sectionName of sections) {
+                const sectionEl = document.getElementById(`${sectionName.toLowerCase()}-section`);
+                const rect = sectionEl.getBoundingClientRect();
+                if (rect.top - navBarHeight <= 1) {
+                    setCurrentSection(sectionName);
+                }
+            }
+        }
+
+        document.addEventListener("scroll", scrollListener);
+
+        return () => {
+            document.removeEventListener("scroll", scrollListener);
+        }
+    }, []);
 
     return (
-        <AppBar ref={ref} className="w-full border-b border-white/8 bg-neutral-950/80! backdrop-blur-lg">
-            <Box className="py-3 px-[15dvw] flex flex-grow items-center justify-between">
+        <AppBar ref={ref} className="w-screen! border-b border-white/8 bg-neutral-950/80! backdrop-blur-lg">
+            <Box className="w-full px-[15%] py-3 grid grid-cols-2 lg:grid-cols-3 place-items-center">
                 <h1
-                    className="w-1/4 text-lg font-bold"
+                    className="first:justify-self-start text-lg font-bold text-nowrap"
                 >
                     Kevin Nguy
                 </h1>
+
                 <Box
-                    className="flex gap-2"
+                    className="hidden gap-2 lg:flex"
                 >
                     {sections.map((section) => (
                         <Button
-                            className="text-[13px]! font-semibold! text-neutral-500!"
+                            className={`font-semibold! rounded-none! ${section === currentSection ? "text-[14px]! text-white! border-b-2!" : "text-[13px]! text-neutral-500!"}`}
                             onClick={() => {
                                 const navBarHeight = ref.current.getBoundingClientRect().height;
                                 const el = document.getElementById(`${section.toLowerCase()}-section`);
@@ -35,7 +57,8 @@ export function NavBar() {
                         </Button>
                     ))}
                 </Box>
-                <Box className="flex justify-end gap-4 w-1/4">
+
+                <Box className="last:justify-self-end flex justify-end gap-4">
                     <Button
                         className="text-[13px]! font-semibold! text-neutral-500!"
                     >
@@ -47,6 +70,11 @@ export function NavBar() {
                     >
                         Contact
                     </Button>
+                    <IconButton
+                        className="hidden!"
+                    >
+                        <MenuIcon/>
+                    </IconButton>
                 </Box>
             </Box>
         </AppBar>
