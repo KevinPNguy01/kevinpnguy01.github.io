@@ -31,9 +31,9 @@ export function Intro() {
             className="pt-32 relative flex flex-col items-center md:items-start w-full"
         >
             <div ref={ref} className="justify-center flex flex-col items-start gap-4">
-                <h2 className="text-white text-lg font-semibold">Introduction</h2>
-                <h1 className="text-white text-6xl font-bold">Kevin Nguy</h1>
-                <p className="text-neutral-400 text-lg font-semibold md:whitespace-pre-line">
+                <h2 className="text-white text-md md:text-md font-semibold">Introduction</h2>
+                <h1 className="text-white text-4xl md:text-6xl font-bold">Kevin Nguy</h1>
+                <p className="text-neutral-400 text-md md:text-lg font-semibold md:whitespace-pre-line">
                     {`I am a current third year studying computer science at UC Irvine.
                     My interests include web development, artificial intelligence, 
                     machine learning, and computer graphics.`}
@@ -52,7 +52,7 @@ export function Intro() {
                         <InstagramIcon/>
                     </IconButton>
                 </div>
-                <div className="z-20 grid grid-cols-2 gap-4 w-48 md:gap-8 md:w-64 lg:w-72 py-4">
+                <div className="z-10 grid grid-cols-2 gap-4 w-48 md:gap-8 md:w-64 lg:w-72 py-4">
                     <Button className="!rounded-lg bg-gradient-to-br from-blue-500 to-blue-600" variant="contained" href="mailto: kevinpnguy01@gmail.com">Contact</Button>
                     <Button className="!rounded-lg !font-semibold !border-2" variant="outlined" target="_blank" href="https://drive.google.com/file/d/17ADWxamoleud6c1fuwy3iqPqQ7d96nK0/view?usp=sharing">Resume</Button>
                 </div>

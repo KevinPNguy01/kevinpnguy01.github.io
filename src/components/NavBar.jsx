@@ -31,10 +31,10 @@ export function NavBar() {
     }, []);
 
     return (
-        <AppBar ref={ref} className="w-full! border-b border-white/8 bg-neutral-950/80! backdrop-blur-lg">
-            <Box className="w-full px-[15%] py-3 grid grid-cols-2 lg:grid-cols-3 place-items-center">
+        <Box ref={ref} className="fixed px-[5%] md:px-[15%] top-0 left-0 right-0 w-screen border-b border-white/8 bg-neutral-950/80! backdrop-blur-lg z-20">
+            <Box className="w-full py-3 grid grid-cols-2 lg:grid-cols-3 place-items-center">
                 <h1
-                    className="first:justify-self-start text-lg font-bold text-nowrap"
+                    className="text-white first:justify-self-start text-lg font-bold text-nowrap"
                 >
                     Kevin Nguy
                 </h1>
@@ -79,6 +79,6 @@ export function NavBar() {
                     </IconButton>
                 </Box>
             </Box>
-        </AppBar>
+        </Box>
     )
 }
