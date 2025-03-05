@@ -25,3 +25,13 @@ body {
 .MuiButtonBase-root {
     text-transform: none !important;
 }
+
+
+@keyframes infinite-scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform : translateX(-50%) translateX(-2rem);
+    }
+}

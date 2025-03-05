@@ -35,13 +35,14 @@ export function SkilsSection() {
                 <h2 className="text-white text-4xl font-bold text-center">
                     My Tech Stack
                 </h2>
-                <p className="w-full px-8 text-neutral-400 text-center font-semibold text-lg text-nowrap whitespace-pre-line">
+                <p className="w-full md:px-8 text-neutral-400 text-center font-semibold text-lg md:text-nowrap md:whitespace-pre-line">
                     {`I like to work with a variety of languages and technologies. 
                     Here are the ones I'm most comfortable with.`}
                 </p>
             </div>
-            <div className="flex flex-wrap items-end justify-around gap-y-8 md:gap-x-16 px-[10%]">
+            <div className="animate-[infinite-scroll_40s_infinite_linear] md:animate-none w-fit flex md:flex-wrap items-center md:justify-around gap-x-16 gap-y-8 h-16 md:h-fit">
                 {languages.map((lang, index) => <Language key={index} {...lang}/>)}
+                <div className="md:hidden flex gap-x-16">{languages.map((lang, index) => <Language key={index} {...lang}/>)}</div>
             </div>
         </section>
     )
@@ -50,8 +51,8 @@ export function SkilsSection() {
 function Language(props) {
     const {name, src} = props;
     return (
-        <div className="w-1/3 md:w-fit flex flex-col gap-2 justify-center items-center">
-            <img className="h-16 md:h-24" src={src} alt={`${name} logo`}/>
+        <div className="md:w-fit flex flex-col gap-2 justify-center items-center">
+            <img className="max-w-fit h-16 md:h-24" src={src} alt={`${name} logo`}/>
             <span className="text-white w-full text-center font-bold">{name}</span>
         </div>
     )
