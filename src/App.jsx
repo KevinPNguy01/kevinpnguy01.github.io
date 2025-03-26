@@ -19,9 +19,9 @@ import StorageIcon from '@mui/icons-material/Storage';
 import SyncIcon from '@mui/icons-material/Sync';
 import TerrainIcon from '@mui/icons-material/Terrain';
 import TextureIcon from '@mui/icons-material/Texture';
+import PsychologyIcon from '@mui/icons-material/Psychology';
 import TransformIcon from '@mui/icons-material/Transform';
 import ViewInArIcon from '@mui/icons-material/ViewInAr';
-import ZoomInIcon from '@mui/icons-material/ZoomIn';
 import { Divider } from '@mui/material';
 import { FeatureCard } from './components/Projects/Features/FeatureCard';
 import { Intro } from './components/Intro';
@@ -31,7 +31,7 @@ import EaterEnrollmentImg from "/assets/eaterenrollment.png";
 import LifeCalendarsImg from "/assets/life_calendars.png";
 import ModelScope3DImg from "/assets/ModelScope.PNG";
 import WhereDidTheWeeksGoImg from "/assets/life_in_weeks.png";
-import RayTracerImg from "/assets/cornell_box.PNG";
+import PathTracerImg from "/assets/snorlax_path_traced.PNG";
 import VoxelGameImg from "/assets/voxelgameengine.png";
 import MC3DModelImporter from '/assets/box_preview.png';
 import { NavBar } from './components/NavBar';
@@ -109,18 +109,18 @@ function App() {
                 </Project>
                 <Divider style={{backgroundColor: "#444", width: "90%"}}/>
                 <Project 
-                    title="Real-time Ray Tracer" 
-                    description="A real-time path tracing engine developed in C++ and using the WinAPI."
-                    repoName="Software-Ray-Tracer"
-                    repoLink="https://github.com/KevinPNguy01/Software-Ray-Tracer/tree/master"
-                    imgSrc={RayTracerImg}
+                    title="Real-time Path Tracer" 
+                    description="A real-time rendering engine that simulates realistic lighting, developed in C++."
+                    repoName="Realtime-Path-Tracer-v2"
+                    repoLink="https://github.com/KevinPNguy01/Realtime-Path-Tracer-v2/tree/master"
+                    imgSrc={PathTracerImg}
                     imgAlt="Cornell Box Render"
                     tags={["C++", "WinAPI"]}
                 >
-                    <FeatureCard title="Adaptive Resolution" text="Renders start at low quality and progressively doubles the sample quality when the camera is stationary." img={<ZoomInIcon style={{ color: 'white' }}/>}/>
                     <FeatureCard title="Realistic Lighting" text="Support for numerous materials such as diffuse surfaces, reflective materials, and configurable light sources." img={<LightbulbIcon style={{ color: 'white' }}/>}/>
+                    <FeatureCard title="AI Denoising" text="Integrated AI denoising to significantly accelerate rendering and enhance image quality." img={<PsychologyIcon style={{color: 'white'}}/>}/>
                     <FeatureCard title="Interactivity" text="Keyboard and mouse controls allow for real-time camera positioning and rotation." img={<MouseIcon style={{ color: 'white' }}/>}/>
-                    <FeatureCard title="Performance Optimizations" text="Leveraged multithreading to render jobs in parallel, resulting in a 10x speedup." img={<SettingsSuggestIcon style={{ color: 'white' }}/>}/>
+                    <FeatureCard title="Performance Optimizations" text="Leveraged multithreading to parellalize lighting computations, enabling real-time interactivity." img={<SettingsSuggestIcon style={{ color: 'white' }}/>}/>
                 </Project>
                 <Divider style={{backgroundColor: "#444", width: "90%"}}/>
                 <Project 
