@@ -66,6 +66,14 @@ import ModelScope3DImg from "/assets/projects/ModelScope.PNG";
 import PathTracerImg from "/assets/projects/snorlax_path_traced.PNG";
 import VoxelGameImg from "/assets/projects/voxelgameengine.png";
 
+import AIBuilderThumbnail from '/assets/projects/mc_ai_builder/ai_builder_thumbnail.png';
+import GenerationInProgress from '/assets/projects/mc_ai_builder/generation_in_progress.png';
+import GenerationComplete from '/assets/projects/mc_ai_builder/generation_complete.png';
+import SteampunkAirship from '/assets/projects/mc_ai_builder/steampunk_airship.png';
+import GreekStatue from '/assets/projects/mc_ai_builder/greek_statue.png';
+import IronManHelmet from '/assets/projects/mc_ai_builder/iron_man_helmet.png';
+import Bee from '/assets/projects/mc_ai_builder/bee.png';
+
 function App() {
     return (
         <div className="w-full px-[5%] md:px-[15%]">
@@ -200,17 +208,17 @@ function App() {
                 </Project>
                 <Divider style={{backgroundColor: "#444", width: "90%"}}/>
                 <Project 
-                    title="Minecraft 3D Model Importer" 
-                    description="A Minecraft mod that allows you to import, transform, and place 3D Models into your worlds."
-                    repoName="MC-3D-Model-Importer"
-                    repoLink="https://github.com/KevinPNguy01/MC-3D-Model-Importer"
-                    imgs={[MC3DModelImporter]}
-                    tags={["Java", "Forge", "Gradle"]}
+                    title="AI Minecraft Build Generator" 
+                    description="A Minecraft mod that allows you to build in Minecraft using AI."
+                    repoName="MC-AI-Builder"
+                    repoLink="https://github.com/KevinPNguy01/MC-AI-Builder"
+                    imgs={[AIBuilderThumbnail, GenerationInProgress, GenerationComplete, SteampunkAirship, GreekStatue, IronManHelmet, Bee]}
+                    tags={["AI", "Java", "Forge", "Gradle"]}
                 >
-                    <FeatureCard title="Graphical Preview" text="A real-time voxelized preview makes it easy to visualize the model and see where it would be placed." img={<ViewInArIcon style={{ color: 'white' }}/>}/>
-                    <FeatureCard title="Texture Mapping" text="Model textures are mapped by matching pixels to the visually most similar blocks." img={<TextureIcon style={{ color: 'white' }}/>}/>
-                    <FeatureCard title="3D Transformations" text="Translate, rotate, and scale models in-game using intuitive mouse and keyboard controls." img={<TransformIcon style={{ color: 'white' }}/>}/>
-                    <FeatureCard title="Multiple File Formats" text="Support for both the STL file format and OBJ file format with textures." img={<InsertDriveFileIcon style={{ color: 'white' }}/>}/>
+                    <FeatureCard title="AI-Powered Builds" text="Turn your ideas into Minecraft builds using text prompts and the power of AI." img={<AutoAwesomeIcon style={{ color: 'white' }}/>}/>
+                    <FeatureCard title="Graphical Preview" text="A real-time voxelized preview makes it easy to visualize the build and see where it would be placed." img={<ViewInArIcon style={{ color: 'white' }}/>}/>
+                    <FeatureCard title="3D Transformations" text="Translate, rotate, and scale builds in-game using intuitive mouse and keyboard controls." img={<TransformIcon style={{ color: 'white' }}/>}/>
+                    <FeatureCard title="Import 3D Models" text="Import your own 3D models with support for both the STL file format and OBJ file format with textures." img={<ViewInArIcon style={{ color: 'white' }}/>}/>
                 </Project>
                 <Divider style={{backgroundColor: "#444", width: "90%"}}/>
                 <Project 
