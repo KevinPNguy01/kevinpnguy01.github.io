@@ -111,6 +111,8 @@ function App() {
                     description="Search for courses and manage class schedules at UCI."
                     repoName="Eater-Enrollment"
                     repoLink="https://github.com/KevinPNguy01/Eater-Enrollment"
+                    websiteName="Eater Enrollment"
+                    websiteLink="https://eaterenrollment.web.app/"
                     imgs={[EaterEnrollmentImg]}
                     tags={["React", "TypeScript", "GraphQL", "Redux", "Tailwind CSS"]}
                 >
@@ -126,6 +128,8 @@ function App() {
                     description="Visualize daily activity across Strava, LeetCode, and GitHub."
                     repoName="Life-Calendars"
                     repoLink="https://github.com/KevinPNguy01/Life-Calendars"
+                    websiteName="Life Calendars"
+                    websiteLink="https://my-life-calendars.web.app/"
                     imgs={[LifeCalendarsImg]}
                     tags={["React", "TypeScript", "Tailwind CSS"]}
                 >
@@ -140,6 +144,8 @@ function App() {
                     description="A lightweight 3D model editor developed with TypeScript and WebGL."
                     repoName="ModelScope3D"
                     repoLink="https://github.com/KevinPNguy01/ModelScope3D"
+                    websiteName="ModelScope"
+                    websiteLink="https://modelscope3d.web.app/"
                     imgs={[ModelScope3DImg]}
                     tags={["WebGL", "React", "TypeScript", "TailwindCSS", "Redux"]}
                 >
@@ -155,6 +161,8 @@ function App() {
                     description="A web app to visualize how many weeks you have in your life."
                     repoName="Where-did-the-Weeks-Go"
                     repoLink="https://github.com/KevinPNguy01/Where-did-the-Weeks-Go"
+                    websiteName="Your Life in Weeks"
+                    websiteLink="https://wheredidtheweeksgo.web.app/"
                     imgs={[WhereDidTheWeeksGoImg]}
                     tags={["React", "TypeScript", "Tailwind CSS"]}
                 >
