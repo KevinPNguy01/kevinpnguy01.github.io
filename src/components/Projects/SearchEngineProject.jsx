@@ -20,9 +20,21 @@ import { GitHubRepoButton } from "../GitHubRepoButton";
 import SearchEngineImg from "/assets/projects/searchengine.png"
 import { TechList } from "./TechStack/TechList";
 import { ImageSlides } from "../ImageSlides";
+import { WebsiteButton } from "../WebsiteButton";
+import { VideoButton } from "../VideoButton";
 
 export function SearchEngineProject() {
     const [value, setValue] = useState(0);
+
+    const { websiteName, websiteLink, videoName, videoLink } = {};
+
+    const repoName = "Web-Crawler-Search-Engine";
+    const repoLink = "https://github.com/KevinPNguy01/Web-Crawler-Search-Engine";
+    const repoExists = repoName && repoLink;
+
+    const websiteExists = websiteName && websiteLink;
+    const videoExists = videoName && videoLink;
+
     return (
         <section className="flex flex-wrap md:grid md:grid-cols-2 gap-8 items-center">
             <div className="w-full flex flex-col gap-2">
@@ -76,10 +88,16 @@ export function SearchEngineProject() {
                     <FeatureCard title="Graphical Interface" text="Enter queries into a searchbox and view results in a clean, interactive layout." img={<ScreenSearchDesktopIcon/>}/>
                 </FeatureList>}
             </div>
-            <div className="flex flex-col gap-8 items-center">
+            <div className="flex flex-col gap-8 items-center w-full">
                 <ImageSlides imgs={[SearchEngineImg]}/>
-                <TechList tags={["Python", "OpenAI", "Streamlit", "Requests"]}/>
-                <GitHubRepoButton name="Web-Crawler-Search-Engine" link="https://github.com/KevinPNguy01/Web-Crawler-Search-Engine"/>
+                <TechList tags={["AI", "Python", "Streamlit", "Requests"]}/>
+                {(repoExists || websiteExists || videoExists) && (
+                    <div className={`items-center justify-center gap-3 w-full flex flex-col grid-cols-2 place-items-center ${(repoExists && websiteExists) || (repoExists && videoExists) || (websiteExists && videoExists) ? 'md:grid *:w-full! *:h-full' : ''}`}>
+                        {repoExists && <GitHubRepoButton name={repoName} link={repoLink}/>}
+                        {websiteExists && <WebsiteButton name={websiteName} link={websiteLink}/>}
+                        {videoExists && <VideoButton name={videoName} link={videoLink}/>}
+                    </div>
+            )}
             </div>
         </section>
     )
