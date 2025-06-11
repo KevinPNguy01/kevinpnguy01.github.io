@@ -58,7 +58,6 @@ import GnomeRender from '/assets/projects/3d_model_reconstruction/gnome_render.p
 import HorizontalScan from '/assets/projects/3d_model_reconstruction/horizontal_scan.png';
 import Points from '/assets/projects/3d_model_reconstruction/points.png';
 import VerticalScan from '/assets/projects/3d_model_reconstruction/vertical_scan.png';
-import MC3DModelImporter from '/assets/projects/box_preview.png';
 import EaterEnrollmentImg from "/assets/projects/eaterenrollment.png";
 import LifeCalendarsImg from "/assets/projects/life_calendars.png";
 import WhereDidTheWeeksGoImg from "/assets/projects/life_in_weeks.png";
@@ -73,6 +72,17 @@ import SteampunkAirship from '/assets/projects/mc_ai_builder/steampunk_airship.p
 import GreekStatue from '/assets/projects/mc_ai_builder/greek_statue.png';
 import IronManHelmet from '/assets/projects/mc_ai_builder/iron_man_helmet.png';
 import Bee from '/assets/projects/mc_ai_builder/bee.png';
+
+import AICompanionThumbnail from '/assets/projects/mc_ai_companion/ai_companion_thumbnail.jpg';
+import Conversation from '/assets/projects/mc_ai_companion/conversation.png';
+import Fighting from '/assets/projects/mc_ai_companion/fighting.png';
+import Eating from '/assets/projects/mc_ai_companion/eating.png';
+import Following from '/assets/projects/mc_ai_companion/following.png';
+
+import ChatIcon from '@mui/icons-material/Chat';
+import ShieldIcon from '@mui/icons-material/Shield';
+import FastfoodIcon from '@mui/icons-material/Fastfood';
+import DirectionsWalkIcon from '@mui/icons-material/DirectionsWalk';
 
 function App() {
     return (
@@ -219,6 +229,18 @@ function App() {
                     <FeatureCard title="Graphical Preview" text="A real-time voxelized preview makes it easy to visualize the build and see where it would be placed." img={<ViewInArIcon style={{ color: 'white' }}/>}/>
                     <FeatureCard title="3D Transformations" text="Translate, rotate, and scale builds in-game using intuitive mouse and keyboard controls." img={<TransformIcon style={{ color: 'white' }}/>}/>
                     <FeatureCard title="Import 3D Models" text="Import your own 3D models with support for both the STL file format and OBJ file format with textures." img={<ViewInArIcon style={{ color: 'white' }}/>}/>
+                </Project>
+                <Divider style={{backgroundColor: "#444", width: "90%"}}/>
+                <Project
+                    title="AI Minecraft Companion" 
+                    description="A Minecraft mod that allows you to have an AI companion in Minecraft."
+                    imgs={[AICompanionThumbnail, Conversation, Fighting, Eating, Following]}
+                    tags={["AI", "Java", "Forge", "Gradle"]}
+                >
+                    <FeatureCard title="Chat Conversations" text="Talk to your AI companion in natural language, with stored memories and personality." img={<ChatIcon style={{ color: 'white' }}/>}/>
+                    <FeatureCard title="Combat" text="Fight and defend against enemies alongside your AI companion." img={<ShieldIcon style={{ color: 'white' }}/>}/>
+                    <FeatureCard title="Interaction" text="Your AI companion will use and respond to items you give them such as food and equipment." img={<FastfoodIcon style={{ color: 'white' }}/>}/>
+                    <FeatureCard title="Following" text="The AI companion will follow you around the world, wherever you go." img={<DirectionsWalkIcon style={{ color: 'white' }}/>}/>
                 </Project>
                 <Divider style={{backgroundColor: "#444", width: "90%"}}/>
                 <Project 
