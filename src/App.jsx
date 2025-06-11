@@ -222,6 +222,8 @@ function App() {
                     description="A Minecraft mod that allows you to build in Minecraft using AI."
                     repoName="MC-AI-Builder"
                     repoLink="https://github.com/KevinPNguy01/MC-AI-Builder"
+                    videoName="Using AI to Build"
+                    videoLink="https://youtu.be/IC3xNaQTRiI?si=qD3c4JTt-vHVhr1X"
                     imgs={[AIBuilderThumbnail, GenerationInProgress, GenerationComplete, SteampunkAirship, GreekStatue, IronManHelmet, Bee]}
                     tags={["AI", "Java", "Forge", "Gradle"]}
                 >
@@ -234,6 +236,8 @@ function App() {
                 <Project
                     title="AI Minecraft Companion" 
                     description="A Minecraft mod that allows you to have an AI companion in Minecraft."
+                    videoName="AI Minecraft Companion"
+                    videoLink="https://youtu.be/c2U8tWre4Y8?si=-HlUG60Ap9I_qZeU"
                     imgs={[AICompanionThumbnail, Conversation, Fighting, Eating, Following]}
                     tags={["AI", "Java", "Forge", "Gradle"]}
                 >
