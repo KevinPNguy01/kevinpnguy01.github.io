@@ -3,6 +3,7 @@ import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
 import BuildIcon from '@mui/icons-material/Build';
 import CakeIcon from '@mui/icons-material/Cake';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+import ChangeHistoryIcon from '@mui/icons-material/ChangeHistory';
 import CloudIcon from '@mui/icons-material/Cloud';
 import DeveloperBoardIcon from '@mui/icons-material/DeveloperBoard';
 import DirectionsRunIcon from '@mui/icons-material/DirectionsRun';
@@ -11,6 +12,7 @@ import EditIcon from '@mui/icons-material/Edit';
 import EventIcon from '@mui/icons-material/Event';
 import FilterAltIcon from '@mui/icons-material/FilterAlt';
 import GpsFixedIcon from '@mui/icons-material/GpsFixed';
+import HighlightIcon from '@mui/icons-material/Highlight';
 import InsertDriveFileIcon from '@mui/icons-material/InsertDriveFile';
 import LightbulbIcon from '@mui/icons-material/Lightbulb';
 import LocalFireDepartmentIcon from '@mui/icons-material/LocalFireDepartment';
@@ -26,6 +28,7 @@ import StorageIcon from '@mui/icons-material/Storage';
 import SyncIcon from '@mui/icons-material/Sync';
 import TerrainIcon from '@mui/icons-material/Terrain';
 import TextureIcon from '@mui/icons-material/Texture';
+import ThreeSixtyIcon from '@mui/icons-material/ThreeSixty';
 import TransformIcon from '@mui/icons-material/Transform';
 import ViewInArIcon from '@mui/icons-material/ViewInAr';
 import WifiIcon from '@mui/icons-material/Wifi';
@@ -37,8 +40,24 @@ import { NavBar } from './components/NavBar';
 import { Project } from './components/Projects/Project';
 import { SearchEngineProject } from './components/Projects/SearchEngineProject';
 import { SkilsSection } from './components/Sections/SkillsSection';
+import AccountSelection from '/assets/experience/aimhi/account_selection.png';
+import AdGeneration from '/assets/experience/aimhi/ad_generation.png';
 import AIMHILogo from '/assets/experience/aimhi/aimhi_logo.jpeg';
+import CaptionGeneration from '/assets/experience/aimhi/caption_generation.png';
+import AIMHILandingPage from '/assets/experience/aimhi/landing_page.png';
+import PostList from '/assets/experience/aimhi/post_list.png';
+import PostUploading from '/assets/experience/aimhi/post_uploading.png';
+import WiringDiagram from '/assets/experience/mindhome/communication_diagram.png';
+import FireDetections1 from '/assets/experience/mindhome/fire_detections_1.png';
+import FireDetections2 from '/assets/experience/mindhome/fire_detections_2.png';
 import MindHomeLogo from '/assets/experience/mindhome/mindhome_logo.jpeg';
+import ColorScan from '/assets/projects/3d_model_reconstruction/color_scan.png';
+import FinalMesh from '/assets/projects/3d_model_reconstruction/final_mesh.png';
+import GardenGnome from '/assets/projects/3d_model_reconstruction/garden_gnome.png';
+import GnomeRender from '/assets/projects/3d_model_reconstruction/gnome_render.png';
+import HorizontalScan from '/assets/projects/3d_model_reconstruction/horizontal_scan.png';
+import Points from '/assets/projects/3d_model_reconstruction/points.png';
+import VerticalScan from '/assets/projects/3d_model_reconstruction/vertical_scan.png';
 import MC3DModelImporter from '/assets/projects/box_preview.png';
 import EaterEnrollmentImg from "/assets/projects/eaterenrollment.png";
 import LifeCalendarsImg from "/assets/projects/life_calendars.png";
@@ -46,17 +65,6 @@ import WhereDidTheWeeksGoImg from "/assets/projects/life_in_weeks.png";
 import ModelScope3DImg from "/assets/projects/ModelScope.PNG";
 import PathTracerImg from "/assets/projects/snorlax_path_traced.PNG";
 import VoxelGameImg from "/assets/projects/voxelgameengine.png";
-
-import AIMHILandingPage from '/assets/experience/aimhi/landing_page.png';
-import PostList from '/assets/experience/aimhi/post_list.png';
-import AdGeneration from '/assets/experience/aimhi/ad_generation.png';
-import CaptionGeneration from '/assets/experience/aimhi/caption_generation.png';
-import AccountSelection from '/assets/experience/aimhi/account_selection.png';
-import PostUploading from '/assets/experience/aimhi/post_uploading.png';
-
-import WiringDiagram from '/assets/experience/mindhome/communication_diagram.png';
-import FireDetections1 from '/assets/experience/mindhome/fire_detections_1.png';
-import FireDetections2 from '/assets/experience/mindhome/fire_detections_2.png';
 
 function App() {
     return (
@@ -103,8 +111,7 @@ function App() {
                     description="Search for courses and manage class schedules at UCI."
                     repoName="Eater-Enrollment"
                     repoLink="https://github.com/KevinPNguy01/Eater-Enrollment"
-                    imgSrc={EaterEnrollmentImg}
-                    imgAlt="Eater Enrollment screenshot"
+                    imgs={[EaterEnrollmentImg]}
                     tags={["React", "TypeScript", "GraphQL", "Redux", "Tailwind CSS"]}
                 >
                     <FeatureCard title="Course Lookup" text="Search for courses across multiple quarters and view details such as availability and descriptions." img={<SearchIcon style={{ color: 'white' }}/>}/>
@@ -119,8 +126,7 @@ function App() {
                     description="Visualize daily activity across Strava, LeetCode, and GitHub."
                     repoName="Life-Calendars"
                     repoLink="https://github.com/KevinPNguy01/Life-Calendars"
-                    imgSrc={LifeCalendarsImg}
-                    imgAlt="Life Calendars screenshot"
+                    imgs={[LifeCalendarsImg]}
                     tags={["React", "TypeScript", "Tailwind CSS"]}
                 >
                     <FeatureCard title="Visual Calendars" text="Visualize data in a colorful and streamlined calendar interface." img={<CalendarMonthIcon style={{ color: 'white' }}/>}/>
@@ -134,8 +140,7 @@ function App() {
                     description="A lightweight 3D model editor developed with TypeScript and WebGL."
                     repoName="ModelScope3D"
                     repoLink="https://github.com/KevinPNguy01/ModelScope3D"
-                    imgSrc={ModelScope3DImg}
-                    imgAlt="ModelScope3D screenshot"
+                    imgs={[ModelScope3DImg]}
                     tags={["WebGL", "React", "TypeScript", "TailwindCSS", "Redux"]}
                 >
                     <FeatureCard title="Configurable Lighting" text="Add and fine-tune multiple light sources to create the perfect scene." img={<LightbulbIcon style={{ color: 'white' }}/>}/>
@@ -150,8 +155,7 @@ function App() {
                     description="A web app to visualize how many weeks you have in your life."
                     repoName="Where-did-the-Weeks-Go"
                     repoLink="https://github.com/KevinPNguy01/Where-did-the-Weeks-Go"
-                    imgSrc={WhereDidTheWeeksGoImg}
-                    imgAlt="Where did the Weeks Go Screenshot"
+                    imgs={[WhereDidTheWeeksGoImg]}
                     tags={["React", "TypeScript", "Tailwind CSS"]}
                 >
                     <FeatureCard title="Personalized Lifespan" text="Enter in your own birthdate and life expectancy to see the weeks that represents your own life." img={<CakeIcon style={{ color: 'white' }}/>}/>
@@ -164,8 +168,7 @@ function App() {
                     description="A real-time rendering engine that simulates realistic lighting, developed in C++."
                     repoName="Realtime-Path-Tracer-v2"
                     repoLink="https://github.com/KevinPNguy01/Realtime-Path-Tracer-v2/tree/master"
-                    imgSrc={PathTracerImg}
-                    imgAlt="Cornell Box Render"
+                    imgs={[PathTracerImg]}
                     tags={["C++", "WinAPI"]}
                 >
                     <FeatureCard title="Realistic Lighting" text="Support for numerous materials such as diffuse surfaces, reflective materials, and configurable light sources." img={<LightbulbIcon style={{ color: 'white' }}/>}/>
@@ -179,8 +182,7 @@ function App() {
                     description="A Minecraft-inspired voxel game written in C++ and using OpenGL."
                     repoName="Voxel-Game-Engine"
                     repoLink="https://github.com/KevinPNguy01/Voxel-Game-Engine"
-                    imgSrc={VoxelGameImg}
-                    imgAlt="In-game screenshot"
+                    imgs={[VoxelGameImg]}
                     tags={["C++", "OpenGL", "GLSL", "GLFW"]}
                 >
                     <FeatureCard title="Infinite Terrain" text="Infinite procedurally generated terrain using perlin noise." img={<TerrainIcon style={{ color: 'white' }}/>}/>
@@ -194,14 +196,27 @@ function App() {
                     description="A Minecraft mod that allows you to import, transform, and place 3D Models into your worlds."
                     repoName="MC-3D-Model-Importer"
                     repoLink="https://github.com/KevinPNguy01/MC-3D-Model-Importer"
-                    imgSrc={MC3DModelImporter}
-                    imgAlt="Mod preview screenshot"
+                    imgs={[MC3DModelImporter]}
                     tags={["Java", "Forge", "Gradle"]}
                 >
                     <FeatureCard title="Graphical Preview" text="A real-time voxelized preview makes it easy to visualize the model and see where it would be placed." img={<ViewInArIcon style={{ color: 'white' }}/>}/>
                     <FeatureCard title="Texture Mapping" text="Model textures are mapped by matching pixels to the visually most similar blocks." img={<TextureIcon style={{ color: 'white' }}/>}/>
                     <FeatureCard title="3D Transformations" text="Translate, rotate, and scale models in-game using intuitive mouse and keyboard controls." img={<TransformIcon style={{ color: 'white' }}/>}/>
                     <FeatureCard title="Multiple File Formats" text="Support for both the STL file format and OBJ file format with textures." img={<InsertDriveFileIcon style={{ color: 'white' }}/>}/>
+                </Project>
+                <Divider style={{backgroundColor: "#444", width: "90%"}}/>
+                <Project 
+                    title="3D Model Reconstruction" 
+                    description="A reconstruction pipeline that builds a 3D model from images using structured illumination."
+                    repoName="3D-Model-Reconstruction"
+                    repoLink="https://github.com/KevinPNguy01/3D-Model-Reconstruction"
+                    imgs={[GardenGnome, ColorScan, VerticalScan, HorizontalScan, Points, FinalMesh, GnomeRender]}
+                    tags={["Python", "Numpy", "OpenCV", "Matplotlib"]}
+                >
+                    <FeatureCard title="Structured Lighting" text="Utilizes projected structured light patterns to capture surface information." img={<HighlightIcon style={{ color: 'white' }}/>}/>
+                    <FeatureCard title="Point Triangulation" text="Estimates 3D points by triangulating corresponding points from multiple images." img={<ChangeHistoryIcon style={{ color: 'white' }}/>}/>
+                    <FeatureCard title="Mesh Generation" text="Generates a 3D mesh from the captured points using Delaunay triangulation." img={<TextureIcon style={{ color: 'white' }}/>}/>
+                    <FeatureCard title="Alignment" text="Aligns the generated meshes using singular value decomposition." img={<ThreeSixtyIcon style={{ color: 'white' }}/>}/>
                 </Project>
                 <Divider style={{backgroundColor: "#444", width: "90%"}}/>
                 <SearchEngineProject/>

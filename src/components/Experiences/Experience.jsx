@@ -23,7 +23,7 @@ export function Experience(props) {
                     </div>
                 </div>
                 <div className="flex gap-6">
-                    <div className="w-1"/>
+                    <div className="hidden md:block w-1"/>
                     <FeatureList>
                         {children}
                     </FeatureList>

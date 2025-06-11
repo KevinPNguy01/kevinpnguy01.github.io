@@ -19,6 +19,7 @@ import { FeatureList } from "../Features/FeatureList";
 import { GitHubRepoButton } from "../GitHubRepoButton";
 import SearchEngineImg from "/assets/projects/searchengine.png"
 import { TechList } from "./TechStack/TechList";
+import { ImageSlides } from "../ImageSlides";
 
 export function SearchEngineProject() {
     const [value, setValue] = useState(0);
@@ -76,7 +77,7 @@ export function SearchEngineProject() {
                 </FeatureList>}
             </div>
             <div className="flex flex-col gap-8 items-center">
-                <img className="shadow-md shadow-black rounded-xl h-fit w-fit" src={SearchEngineImg} alt="Search engine screenshot"/>
+                <ImageSlides imgs={[SearchEngineImg]}/>
                 <TechList tags={["Python", "OpenAI", "Streamlit", "Requests"]}/>
                 <GitHubRepoButton name="Web-Crawler-Search-Engine" link="https://github.com/KevinPNguy01/Web-Crawler-Search-Engine"/>
             </div>

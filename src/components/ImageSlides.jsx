@@ -79,7 +79,7 @@ export function ImageSlides({ imgs }) {
                 <NavigateNextIcon />
             </IconButton>
             <div className="flex gap-2 absolute bottom-3 left-1/2 transform -translate-x-1/2 text-white font-semibold">
-                {Array.from({length: totalImages}, (_, index) => (
+                {imgs.length > 1 && Array.from({length: totalImages}, (_, index) => (
                     <span key={index} className={`inline-block w-1.5 h-1.5 rounded-full ${index === currentIndex ? 'bg-white' : 'bg-neutral-400'} drop-shadow-[0_0px_1px_rgba(0,0,0,1)]`}></span>
                 ))}
             </div>

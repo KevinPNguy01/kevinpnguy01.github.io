@@ -1,9 +1,10 @@
 import { FeatureList } from "../Features/FeatureList";
 import { GitHubRepoButton } from "../GitHubRepoButton";
+import { ImageSlides } from "../ImageSlides";
 import { TechList } from "./TechStack/TechList";
 
 export function Project(props) {
-    const {title, description, imgSrc, imgAlt, children, repoName, repoLink, tags} = props;
+    const {title, description, imgs, children, repoName, repoLink, tags} = props;
     return (
         <section className="flex flex-wrap lg:grid lg:grid-cols-2 gap-8 items-center">
             <div className="w-full flex flex-col gap-2">
@@ -20,7 +21,7 @@ export function Project(props) {
                 </FeatureList>
             </div>
             <div className="flex flex-col gap-8 items-center w-full">
-                <img className="shadow-md shadow-black rounded-xl h-fit w-fit" src={imgSrc} alt={imgAlt}/>
+                <ImageSlides imgs={imgs}/>
                 <TechList tags={tags}/>
                 <GitHubRepoButton name={repoName} link={repoLink}/>
             </div>
