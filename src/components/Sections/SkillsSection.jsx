@@ -1,16 +1,16 @@
-import CLogo from "/assets/c.png";
-import CppLogo from "/assets/c++.png";
-import JavaLogo from "/assets/java.png";
-import JavaScriptLogo from "/assets/javascript.png";
-import TypeScriptLogo from "/assets/typescript.png";
-import PythonLogo from "/assets/python.png";
-import HtmlLogo from "/assets/html.png";
-import CssLogo from "/assets/css.png";
-import FirebaseLogo from "/assets/firebase.png";
-import GraphQLLogo from "/assets/graphql.png";
-import ReactLogo from "/assets/react.png";
-import ReduxLogo from "/assets/redux.png";
-import TailwindLogo from "/assets/tailwind.png";
+import CLogo from "/assets/skills/c.png";
+import CppLogo from "/assets/skills/c++.png";
+import JavaLogo from "/assets/skills/java.png";
+import JavaScriptLogo from "/assets/skills/javascript.png";
+import TypeScriptLogo from "/assets/skills/typescript.png";
+import PythonLogo from "/assets/skills/python.png";
+import HtmlLogo from "/assets/skills/html.png";
+import CssLogo from "/assets/skills/css.png";
+import FirebaseLogo from "/assets/skills/firebase.png";
+import GraphQLLogo from "/assets/skills/graphql.png";
+import ReactLogo from "/assets/skills/react.png";
+import ReduxLogo from "/assets/skills/redux.png";
+import TailwindLogo from "/assets/skills/tailwind.png";
 
 const languages = [
     {name: "C", src: CLogo},
@@ -32,10 +32,10 @@ export function SkilsSection() {
     return (
         <section id="skills-section" className="flex flex-col py-16 gap-12">
             <div className="w-full flex flex-col items-center gap-2">
-                <h2 className="text-white text-4xl font-bold text-center">
+                <h2 className="text-white text-3xl font-bold text-center">
                     My Tech Stack
                 </h2>
-                <p className="w-full md:px-8 text-neutral-400 text-center font-semibold text-lg md:text-nowrap md:whitespace-pre-line">
+                <p className="w-full md:px-8 text-neutral-400 text-center font-semibold text-md md:text-nowrap md:whitespace-pre-line">
                     {`I like to work with a variety of languages and technologies. 
                     Here are the ones I'm most comfortable with.`}
                 </p>

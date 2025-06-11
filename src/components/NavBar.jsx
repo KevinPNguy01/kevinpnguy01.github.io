@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from 'react';
 import MenuIcon from '@mui/icons-material/Menu';
 import IconButton from '@mui/material/IconButton'
 
-const sections = ["Home", "Skills", "Projects"];
+const sections = ["Home", "Skills", "Experience", "Projects"];
 
 export function NavBar() {
     const ref = useRef();
@@ -31,7 +31,7 @@ export function NavBar() {
     }, []);
 
     return (
-        <Box ref={ref} className="fixed px-[5%] md:px-[15%] top-0 left-0 right-0 w-screen border-b border-white/8 bg-neutral-950/80! backdrop-blur-lg z-20">
+        <Box ref={ref} className="fixed px-[5%] md:px-[15%] top-0 left-0 right-0 w-screen border-b border-white/8 bg-neutral-950/75! backdrop-blur-lg z-20">
             <Box className="w-full py-3 grid grid-cols-2 lg:grid-cols-3 place-items-center">
                 <h1
                     className="text-white first:justify-self-start text-lg font-bold text-nowrap"

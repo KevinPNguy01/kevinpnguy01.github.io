@@ -1,6 +1,6 @@
 import { Tab, Tabs } from "@mui/material";
 import GestureIcon from '@mui/icons-material/Gesture';
-import { FeatureCard } from "./Features/FeatureCard";
+import { FeatureCard } from "../Features/FeatureCard";
 import { useState } from "react";
 import WysiwygIcon from '@mui/icons-material/Wysiwyg';
 import TimerIcon from '@mui/icons-material/Timer';
@@ -15,9 +15,9 @@ import BoltIcon from '@mui/icons-material/Bolt';
 import MergeIcon from '@mui/icons-material/Merge';
 import ScreenSearchDesktopIcon from '@mui/icons-material/ScreenSearchDesktop';
 import StorageIcon from '@mui/icons-material/Storage';
-import { FeatureList } from "./Features/FeatureList";
+import { FeatureList } from "../Features/FeatureList";
 import { GitHubRepoButton } from "../GitHubRepoButton";
-import SearchEngineImg from "/assets/searchengine.png"
+import SearchEngineImg from "/assets/projects/searchengine.png"
 import { TechList } from "./TechStack/TechList";
 
 export function SearchEngineProject() {
@@ -26,10 +26,10 @@ export function SearchEngineProject() {
         <section className="flex flex-wrap md:grid md:grid-cols-2 gap-8 items-center">
             <div className="w-full flex flex-col gap-2">
                 <div className="flex flex-col gap-2">
-                    <h2 className="text-white font-bold text-4xl">
+                    <h2 className="text-white font-bold text-2xl">
                         Web Crawler and Search Engine
                     </h2>
-                    <span className="text-neutral-400 font-semibold text-lg">
+                    <span className="text-neutral-400 font-semibold text-md">
                         A custom web crawler, indexer, and search engine.
                     </span>
                 </div>

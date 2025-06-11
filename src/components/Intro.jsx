@@ -38,7 +38,7 @@ export function Intro() {
                     My interests include web development, artificial intelligence, 
                     machine learning, and computer graphics.`}
                 </p>
-                <div>
+                <div className="z-10">
                     <IconButton target="_blank" href="https://github.com/kevinpnguy01">
                         <GitHubIcon/>
                     </IconButton>

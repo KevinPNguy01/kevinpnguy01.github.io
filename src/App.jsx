@@ -1,7 +1,10 @@
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
+import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
 import BuildIcon from '@mui/icons-material/Build';
 import CakeIcon from '@mui/icons-material/Cake';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+import CloudIcon from '@mui/icons-material/Cloud';
+import DeveloperBoardIcon from '@mui/icons-material/DeveloperBoard';
 import DirectionsRunIcon from '@mui/icons-material/DirectionsRun';
 import DynamicFeedIcon from '@mui/icons-material/DynamicFeed';
 import EditIcon from '@mui/icons-material/Edit';
@@ -10,32 +13,50 @@ import FilterAltIcon from '@mui/icons-material/FilterAlt';
 import GpsFixedIcon from '@mui/icons-material/GpsFixed';
 import InsertDriveFileIcon from '@mui/icons-material/InsertDriveFile';
 import LightbulbIcon from '@mui/icons-material/Lightbulb';
+import LocalFireDepartmentIcon from '@mui/icons-material/LocalFireDepartment';
 import MapIcon from '@mui/icons-material/Map';
+import ModelTrainingIcon from '@mui/icons-material/ModelTraining';
 import MouseIcon from '@mui/icons-material/Mouse';
 import PaletteIcon from '@mui/icons-material/Palette';
+import PsychologyIcon from '@mui/icons-material/Psychology';
 import SearchIcon from '@mui/icons-material/Search';
 import SettingsSuggestIcon from '@mui/icons-material/SettingsSuggest';
+import ShareIcon from '@mui/icons-material/Share';
 import StorageIcon from '@mui/icons-material/Storage';
 import SyncIcon from '@mui/icons-material/Sync';
 import TerrainIcon from '@mui/icons-material/Terrain';
 import TextureIcon from '@mui/icons-material/Texture';
-import PsychologyIcon from '@mui/icons-material/Psychology';
 import TransformIcon from '@mui/icons-material/Transform';
 import ViewInArIcon from '@mui/icons-material/ViewInAr';
+import WifiIcon from '@mui/icons-material/Wifi';
 import { Divider } from '@mui/material';
-import { FeatureCard } from './components/Projects/Features/FeatureCard';
+import { Experience } from './components/Experiences/Experience';
+import { FeatureCard } from './components/Features/FeatureCard';
 import { Intro } from './components/Intro';
+import { NavBar } from './components/NavBar';
 import { Project } from './components/Projects/Project';
 import { SearchEngineProject } from './components/Projects/SearchEngineProject';
-import EaterEnrollmentImg from "/assets/eaterenrollment.png";
-import LifeCalendarsImg from "/assets/life_calendars.png";
-import ModelScope3DImg from "/assets/ModelScope.PNG";
-import WhereDidTheWeeksGoImg from "/assets/life_in_weeks.png";
-import PathTracerImg from "/assets/snorlax_path_traced.PNG";
-import VoxelGameImg from "/assets/voxelgameengine.png";
-import MC3DModelImporter from '/assets/box_preview.png';
-import { NavBar } from './components/NavBar';
 import { SkilsSection } from './components/Sections/SkillsSection';
+import AIMHILogo from '/assets/experience/aimhi/aimhi_logo.jpeg';
+import MindHomeLogo from '/assets/experience/mindhome/mindhome_logo.jpeg';
+import MC3DModelImporter from '/assets/projects/box_preview.png';
+import EaterEnrollmentImg from "/assets/projects/eaterenrollment.png";
+import LifeCalendarsImg from "/assets/projects/life_calendars.png";
+import WhereDidTheWeeksGoImg from "/assets/projects/life_in_weeks.png";
+import ModelScope3DImg from "/assets/projects/ModelScope.PNG";
+import PathTracerImg from "/assets/projects/snorlax_path_traced.PNG";
+import VoxelGameImg from "/assets/projects/voxelgameengine.png";
+
+import AIMHILandingPage from '/assets/experience/aimhi/landing_page.png';
+import PostList from '/assets/experience/aimhi/post_list.png';
+import AdGeneration from '/assets/experience/aimhi/ad_generation.png';
+import CaptionGeneration from '/assets/experience/aimhi/caption_generation.png';
+import AccountSelection from '/assets/experience/aimhi/account_selection.png';
+import PostUploading from '/assets/experience/aimhi/post_uploading.png';
+
+import WiringDiagram from '/assets/experience/mindhome/communication_diagram.png';
+import FireDetections1 from '/assets/experience/mindhome/fire_detections_1.png';
+import FireDetections2 from '/assets/experience/mindhome/fire_detections_2.png';
 
 function App() {
     return (
@@ -45,6 +66,36 @@ function App() {
             <Intro/>
             <Divider style={{ backgroundColor: "#444" }} />
             <SkilsSection/>
+            <Divider style={{backgroundColor: "#444"}}/>
+            <section id="experience-section" className="flex flex-col py-8 gap-8">
+                <Experience
+                    title="AI/ML Engineer Intern"
+                    organization="MindHome • Internship"
+                    duration="Mar 2025 - Present"
+                    companyLogo={MindHomeLogo}
+                    imgs={[WiringDiagram, FireDetections1, FireDetections2]}
+                    tags={["Python", "C++", "YOLOv8", "ESP32"]}
+                >
+                    <FeatureCard title="Realtime Fire Detection" text="Developed a fire/smoke detection system using ESP32 and Jetson Nano with real-time sensors and AI inference." img={<LocalFireDepartmentIcon style={{ color: 'white' }}/>}/>
+                    <FeatureCard title="ESP32 Firmware" text="Built firmware for ESP32 to stream camera video, read environmental sensors over I2C, and expose a web API." img={<DeveloperBoardIcon style={{ color: 'white' }}/>}/>
+                    <FeatureCard title="YOLOv8 Training" text="Trained a YOLOv8 model for fire/smoke detection by aggregating, cleaning, and relabeling multiple datasets." img={<ModelTrainingIcon style={{ color: 'white' }}/>}/>
+                    <FeatureCard title="Jetson Integration" text="Integrated the model on Jetson Nano to perform real-time inference and POST results back to the ESP32." img={<WifiIcon style={{ color: 'white' }}/>}/>
+                </Experience>
+                <Divider style={{backgroundColor: "#444"}}/>
+                <Experience
+                    title="Full Stack Developer Intern"
+                    organization="AIM-HI • Internship"
+                    duration="Feb 2025 - May 2025"
+                    companyLogo={AIMHILogo}
+                    imgs={[AIMHILandingPage, PostList, AdGeneration, CaptionGeneration, AccountSelection, PostUploading]}
+                    tags={["React", "JavaScript", "Node.js", "Tailwind CSS"]}
+                >
+                    <FeatureCard title="AI Ad Generation" text="Built AI-powered features enabling image and video ad generation using OpenAI, Runway, and Google Veo." img={<AutoAwesomeIcon style={{ color: 'white' }}/>}/>
+                    <FeatureCard title="Social Media Integration" text="Integrated posting capabilities for Facebook, Instagram, TikTok, and LinkedIn via OAuth 2.0 and platform APIs." img={<ShareIcon style={{ color: 'white' }}/>}/>
+                    <FeatureCard title="Cloud Functions" text="Developed backend APIs using Node.js to handle AI generation, authentication, and social media posting." img={<CloudIcon style={{ color: 'white' }}/>}/>
+                    <FeatureCard title="UI Components" text="Created scalable, reusable components for content generation, account management, and publishing workflows." img={<BuildIcon style={{ color: 'white' }}/>}/>
+                </Experience>
+            </section>
             <Divider style={{backgroundColor: "#444"}}/>
             <section id="projects-section" className="flex flex-col py-8 gap-8">
                 <Project 
