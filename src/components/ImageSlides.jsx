@@ -56,14 +56,16 @@ export function ImageSlides({ imgs }) {
             ref={ref}
             className="overflow-hidden relative w-full flex items-center justify-center rounded-xl bg-black/20"
         >
-            <img
-                className="object-cover"
-                src={imgs[currentIndex]}
-                style={width > 0 ? {
-                    height: `${height}px`,
-                    width: `${width}px`,
-                } : {}}
-            />
+            {imgs.map((_, index) => (
+                <img
+                    className={`object-cover ${index === currentIndex ? '' : 'hidden'}`}
+                    src={imgs[index]}
+                    style={width > 0 ? {
+                        height: `${height}px`,
+                        width: `${width}px`,
+                    } : {}}
+                />
+            ))}
             <IconButton
                 className={`${currentIndex === 0 ? "opacity-0" : ""} bg-neutral-500/20! backdrop-filter backdrop-blur-sm p-1! absolute! left-1 top-1/2 transform -translate-y-1/2`}
                 onClick={handlePrev}
