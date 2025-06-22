@@ -47,10 +47,12 @@ import CaptionGeneration from '/assets/experience/aimhi/caption_generation.png';
 import AIMHILandingPage from '/assets/experience/aimhi/landing_page.png';
 import PostList from '/assets/experience/aimhi/post_list.png';
 import PostUploading from '/assets/experience/aimhi/post_uploading.png';
-import WiringDiagram from '/assets/experience/mindhome/communication_diagram.png';
+import FireDetected from '/assets/experience/mindhome/fire_detected.png';
 import FireDetections1 from '/assets/experience/mindhome/fire_detections_1.png';
 import FireDetections2 from '/assets/experience/mindhome/fire_detections_2.png';
 import MindHomeLogo from '/assets/experience/mindhome/mindhome_logo.jpeg';
+import NoFireDetected from '/assets/experience/mindhome/no_fire_detected.png';
+import WiringDiagram from '/assets/experience/mindhome/wiring_diagram.png';
 import ColorScan from '/assets/projects/3d_model_reconstruction/color_scan.png';
 import FinalMesh from '/assets/projects/3d_model_reconstruction/final_mesh.png';
 import GardenGnome from '/assets/projects/3d_model_reconstruction/garden_gnome.png';
@@ -66,23 +68,23 @@ import PathTracerImg from "/assets/projects/snorlax_path_traced.PNG";
 import VoxelGameImg from "/assets/projects/voxelgameengine.png";
 
 import AIBuilderThumbnail from '/assets/projects/mc_ai_builder/ai_builder_thumbnail.png';
-import GenerationInProgress from '/assets/projects/mc_ai_builder/generation_in_progress.png';
+import Bee from '/assets/projects/mc_ai_builder/bee.png';
 import GenerationComplete from '/assets/projects/mc_ai_builder/generation_complete.png';
-import SteampunkAirship from '/assets/projects/mc_ai_builder/steampunk_airship.png';
+import GenerationInProgress from '/assets/projects/mc_ai_builder/generation_in_progress.png';
 import GreekStatue from '/assets/projects/mc_ai_builder/greek_statue.png';
 import IronManHelmet from '/assets/projects/mc_ai_builder/iron_man_helmet.png';
-import Bee from '/assets/projects/mc_ai_builder/bee.png';
+import SteampunkAirship from '/assets/projects/mc_ai_builder/steampunk_airship.png';
 
 import AICompanionThumbnail from '/assets/projects/mc_ai_companion/ai_companion_thumbnail.jpg';
 import Conversation from '/assets/projects/mc_ai_companion/conversation.png';
-import Fighting from '/assets/projects/mc_ai_companion/fighting.png';
 import Eating from '/assets/projects/mc_ai_companion/eating.png';
+import Fighting from '/assets/projects/mc_ai_companion/fighting.png';
 import Following from '/assets/projects/mc_ai_companion/following.png';
 
 import ChatIcon from '@mui/icons-material/Chat';
-import ShieldIcon from '@mui/icons-material/Shield';
-import FastfoodIcon from '@mui/icons-material/Fastfood';
 import DirectionsWalkIcon from '@mui/icons-material/DirectionsWalk';
+import FastfoodIcon from '@mui/icons-material/Fastfood';
+import ShieldIcon from '@mui/icons-material/Shield';
 
 function App() {
     return (
@@ -99,7 +101,7 @@ function App() {
                     organization="MindHome • Internship"
                     duration="Mar 2025 - Present"
                     companyLogo={MindHomeLogo}
-                    imgs={[WiringDiagram, FireDetections1, FireDetections2]}
+                    imgs={[WiringDiagram, NoFireDetected, FireDetected, FireDetections1, FireDetections2]}
                     tags={["Python", "C++", "YOLOv8", "ESP32"]}
                 >
                     <FeatureCard title="Realtime Fire Detection" text="Developed a fire/smoke detection system using ESP32 and Jetson Nano with real-time sensors and AI inference." img={<LocalFireDepartmentIcon style={{ color: 'white' }}/>}/>
