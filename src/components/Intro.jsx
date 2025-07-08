@@ -53,7 +53,7 @@ export function Intro() {
                     </IconButton>
                 </div>
                 <div className="z-10 grid grid-cols-2 gap-4 w-48 md:gap-8 md:w-64 lg:w-72 py-4">
-                    <Button className="!rounded-lg bg-gradient-to-br from-blue-500 to-blue-600" variant="contained" href="mailto: kevinpnguy01@gmail.com">Contact</Button>
+                    <Button className="!rounded-lg bg-gradient-to-br from-blue-500 to-blue-700" variant="contained" href="mailto: kevinpnguy01@gmail.com">Contact</Button>
                     <Button className="!rounded-lg !font-semibold !border-2" variant="outlined" target="_blank" href="https://drive.google.com/file/d/17ADWxamoleud6c1fuwy3iqPqQ7d96nK0/view?usp=sharing">Resume</Button>
                 </div>
             </div>

@@ -7,7 +7,7 @@ export function GitHubRepoButton(props) {
         <Button 
             target="_blank" 
             href={link} 
-            className="w-full md:w-fit bg-gradient-to-br from-blue-500 to-blue-600" 
+            className="w-full md:w-fit bg-gradient-to-br from-zinc-700 to-zinc-800" 
             variant="contained" 
             startIcon={<GitHubIcon/>}
         >

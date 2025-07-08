@@ -7,7 +7,7 @@ export function WebsiteButton(props) {
         <Button 
             target="_blank" 
             href={link} 
-            className="w-full md:w-fit bg-gradient-to-br from-orange-500 to-orange-600" 
+            className="w-full md:w-fit bg-gradient-to-br from-blue-500 to-blue-700" 
             variant="contained" 
             startIcon={<OpenInNewIcon/>}
         >

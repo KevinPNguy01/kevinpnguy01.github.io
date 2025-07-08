@@ -8,7 +8,7 @@ export function VideoButton(props) {
         <Button 
             target="_blank" 
             href={link} 
-            className="w-full md:w-fit bg-gradient-to-br from-red-500 to-red-600" 
+            className="w-full md:w-fit bg-gradient-to-br from-red-500 to-red-700" 
             variant="contained" 
             startIcon={<YouTubeIcon/>}
         >

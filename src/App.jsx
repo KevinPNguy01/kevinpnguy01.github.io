@@ -99,7 +99,7 @@ function App() {
                 <Experience
                     title="AI/ML Engineer Intern"
                     organization="MindHome • Internship"
-                    duration="Mar 2025 - Present"
+                    duration="Mar 2025 - Jun 2025"
                     companyLogo={MindHomeLogo}
                     imgs={[WiringDiagram, NoFireDetected, FireDetected, FireDetections1, FireDetections2]}
                     tags={["Python", "C++", "YOLOv8", "ESP32"]}

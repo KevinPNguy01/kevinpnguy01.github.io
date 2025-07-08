@@ -66,7 +66,7 @@ export function NavBar() {
                         Resume
                     </Button>
                     <Button
-                        className="text-[13px]! font-semibold! bg-gradient-to-br from-blue-500 to-blue-600"
+                        className="text-[13px]! font-semibold! bg-gradient-to-br from-blue-500 to-blue-700"
                         variant="contained"
                         href="mailto: kevinpnguy01@gmail.com"
                     >
