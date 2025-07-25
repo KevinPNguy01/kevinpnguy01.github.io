@@ -31,7 +31,7 @@ export function Project(props) {
                 <ImageSlides imgs={imgs}/>
                 <TechList tags={tags}/>
                 {(repoExists || websiteExists || videoExists) && (
-                    <div className={`items-center justify-center gap-3 w-full flex flex-col grid-cols-2 place-items-center ${(repoExists && websiteExists) || (repoExists && videoExists) || (websiteExists && videoExists) ? 'md:grid *:w-full! *:h-full' : ''}`}>
+                    <div className={`items-center justify-center gap-3 flex flex-col place-items-center md:grid *:w-full! *:h-full  ${(repoExists && websiteExists) || (repoExists && videoExists) || (websiteExists && videoExists) ? 'grid-cols-2 w-full' : 'w-1/2 grid-cols-1'}`}>
                         {repoExists && <GitHubRepoButton name={repoName} link={repoLink}/>}
                         {websiteExists && <WebsiteButton name={websiteName} link={websiteLink}/>}
                         {videoExists && <VideoButton name={videoName} link={videoLink}/>}

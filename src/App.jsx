@@ -81,6 +81,8 @@ import Eating from '/assets/projects/mc_ai_companion/eating.png';
 import Fighting from '/assets/projects/mc_ai_companion/fighting.png';
 import Following from '/assets/projects/mc_ai_companion/following.png';
 
+import BriviantLogo from '/assets/experience/briviant/briviant_logo.png';
+
 import ChatIcon from '@mui/icons-material/Chat';
 import DirectionsWalkIcon from '@mui/icons-material/DirectionsWalk';
 import FastfoodIcon from '@mui/icons-material/Fastfood';
@@ -96,6 +98,16 @@ function App() {
             <SkilsSection/>
             <Divider style={{backgroundColor: "#444"}}/>
             <section id="experience-section" className="flex flex-col py-8 gap-8">
+                <Experience
+                    title="Software Developer Intern"
+                    organization="Briviant • Internship"
+                    duration="Aug 2025 - Present"
+                    companyLogo={BriviantLogo}
+                    imgs={[]}
+                    tags={[]}
+                >
+                </Experience>
+                <Divider style={{backgroundColor: "#444"}}/>
                 <Experience
                     title="AI/ML Engineer Intern"
                     organization="MindHome • Internship"

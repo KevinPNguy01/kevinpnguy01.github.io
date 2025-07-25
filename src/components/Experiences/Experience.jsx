@@ -22,17 +22,17 @@ export function Experience(props) {
                         </span>
                     </div>
                 </div>
-                <div className="flex gap-6">
+                {children != null && <div className="flex gap-6">
                     <div className="hidden md:block w-1"/>
                     <FeatureList>
                         {children}
                     </FeatureList>
-                </div>
+                </div>}
             </div>
-            <div className="flex flex-col gap-8 items-center w-full">
-                <ImageSlides imgs={imgs}/>
-                <TechList tags={tags}/>
-            </div>
+            {(imgs.length > 0 || tags.length > 0) && <div className="flex flex-col gap-8 items-center w-full">
+                {imgs.length > 0 && <ImageSlides imgs={imgs}/>}
+                {tags.length > 0 && <TechList tags={tags}/>}
+            </div>}
         </section>
     );
 }
