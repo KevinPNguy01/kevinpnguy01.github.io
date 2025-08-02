@@ -1,27 +1,27 @@
-import { Tab, Tabs } from "@mui/material";
+import BarChartIcon from '@mui/icons-material/BarChart';
+import BoltIcon from '@mui/icons-material/Bolt';
 import GestureIcon from '@mui/icons-material/Gesture';
-import { FeatureCard } from "../Features/FeatureCard";
-import { useState } from "react";
-import WysiwygIcon from '@mui/icons-material/Wysiwyg';
-import TimerIcon from '@mui/icons-material/Timer';
-import PauseIcon from '@mui/icons-material/Pause';
-import SettingsIcon from '@mui/icons-material/Settings';
 import LayersIcon from '@mui/icons-material/Layers';
 import MemoryIcon from '@mui/icons-material/Memory';
-import TextFieldsIcon from '@mui/icons-material/TextFields';
-import BarChartIcon from '@mui/icons-material/BarChart';
-import PsychologyIcon from '@mui/icons-material/Psychology';
-import BoltIcon from '@mui/icons-material/Bolt';
 import MergeIcon from '@mui/icons-material/Merge';
+import PauseIcon from '@mui/icons-material/Pause';
+import PsychologyIcon from '@mui/icons-material/Psychology';
 import ScreenSearchDesktopIcon from '@mui/icons-material/ScreenSearchDesktop';
+import SettingsIcon from '@mui/icons-material/Settings';
 import StorageIcon from '@mui/icons-material/Storage';
+import TextFieldsIcon from '@mui/icons-material/TextFields';
+import TimerIcon from '@mui/icons-material/Timer';
+import WysiwygIcon from '@mui/icons-material/Wysiwyg';
+import { Tab, Tabs } from "@mui/material";
+import { useState } from "react";
+import { FeatureCard } from "../Features/FeatureCard";
 import { FeatureList } from "../Features/FeatureList";
 import { GitHubRepoButton } from "../GitHubRepoButton";
-import SearchEngineImg from "/assets/projects/searchengine.png"
-import { TechList } from "./TechStack/TechList";
 import { ImageSlides } from "../ImageSlides";
-import { WebsiteButton } from "../WebsiteButton";
 import { VideoButton } from "../VideoButton";
+import { WebsiteButton } from "../WebsiteButton";
+import { TechList } from "./TechStack/TechList";
+import SearchEngineImg from "/assets/projects/searchengine.png";
 
 export function SearchEngineProject() {
     const [value, setValue] = useState(0);
@@ -36,7 +36,7 @@ export function SearchEngineProject() {
     const videoExists = videoName && videoLink;
 
     return (
-        <section className="flex flex-wrap md:grid md:grid-cols-2 gap-8 items-center">
+        <section className="flex flex-wrap md:grid md:grid-cols-2 gap-8 items-center w-full">
             <div className="w-full flex flex-col gap-2">
                 <div className="flex flex-col gap-2">
                     <h2 className="text-white font-bold text-2xl">

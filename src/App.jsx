@@ -88,6 +88,19 @@ import DirectionsWalkIcon from '@mui/icons-material/DirectionsWalk';
 import FastfoodIcon from '@mui/icons-material/Fastfood';
 import ShieldIcon from '@mui/icons-material/Shield';
 
+import House from '/assets/projects/mc_desmos/house.webp';
+import Inventory from '/assets/projects/mc_desmos/inventory.webp';
+import NetherPortal from '/assets/projects/mc_desmos/nether_portal.webp';
+import Settings from '/assets/projects/mc_desmos/settings.webp';
+import Skyblock from '/assets/projects/mc_desmos/skyblock.webp';
+import DesmosThumb from '/assets/projects/mc_desmos/thumb.webp';
+import WorldSelection from '/assets/projects/mc_desmos/world_selection.webp';
+
+import AdsClickIcon from '@mui/icons-material/AdsClick';
+import InventoryIcon from '@mui/icons-material/Inventory';
+import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
+import TransferWithinAStationIcon from '@mui/icons-material/TransferWithinAStation';
+
 function App() {
     return (
         <div className="w-full px-[5%] md:px-[15%]">
@@ -97,7 +110,7 @@ function App() {
             <Divider style={{ backgroundColor: "#444" }} />
             <SkilsSection/>
             <Divider style={{backgroundColor: "#444"}}/>
-            <section id="experience-section" className="flex flex-col py-8 gap-8">
+            <section id="experience-section" className="flex flex-col py-8 gap-8 items-center">
                 <Experience
                     title="Software Developer Intern"
                     organization="Briviant • Internship"
@@ -107,7 +120,7 @@ function App() {
                     tags={[]}
                 >
                 </Experience>
-                <Divider style={{backgroundColor: "#444"}}/>
+                <Divider style={{backgroundColor: "#444", width: "90%"}}/>
                 <Experience
                     title="AI/ML Engineer Intern"
                     organization="MindHome • Internship"
@@ -121,7 +134,7 @@ function App() {
                     <FeatureCard title="YOLOv8 Training" text="Trained a YOLOv8 model for fire/smoke detection by aggregating, cleaning, and relabeling multiple datasets." img={<ModelTrainingIcon style={{ color: 'white' }}/>}/>
                     <FeatureCard title="Jetson Integration" text="Integrated the model on Jetson Nano to perform real-time inference and POST results back to the ESP32." img={<WifiIcon style={{ color: 'white' }}/>}/>
                 </Experience>
-                <Divider style={{backgroundColor: "#444"}}/>
+                <Divider style={{backgroundColor: "#444", width: "90%"}}/>
                 <Experience
                     title="Full Stack Developer Intern"
                     organization="AIM-HI • Internship"
@@ -137,7 +150,7 @@ function App() {
                 </Experience>
             </section>
             <Divider style={{backgroundColor: "#444"}}/>
-            <section id="projects-section" className="flex flex-col py-8 gap-8">
+            <section id="projects-section" className="flex flex-col py-8 gap-8 items-center">
                 <Project 
                     title="Eater Enrollment" 
                     description="Search for courses and manage class schedules at UCI."
@@ -259,6 +272,22 @@ function App() {
                     <FeatureCard title="Combat" text="Fight and defend against enemies alongside your AI companion." img={<ShieldIcon style={{ color: 'white' }}/>}/>
                     <FeatureCard title="Interaction" text="Your AI companion will use and respond to items you give them such as food and equipment." img={<FastfoodIcon style={{ color: 'white' }}/>}/>
                     <FeatureCard title="Following" text="The AI companion will follow you around the world, wherever you go." img={<DirectionsWalkIcon style={{ color: 'white' }}/>}/>
+                </Project>
+                <Divider style={{backgroundColor: "#444", width: "90%"}}/>
+                <Project 
+                    title="Minecraft in Desmos"
+                    description="A Minecraft game engine built using only math expressions and Desmos Graphing Calculator."
+                    imgs={[DesmosThumb, Skyblock, NetherPortal, House, Inventory, Settings, WorldSelection]}
+                    tags={["Math","Computer Graphics"]}
+                    videoLink="https://youtu.be/N25J_wla8oo"
+                    videoName="Minecraft in Desmos"
+                    websiteLink="https://www.desmos.com/calculator/qhlbod5l3y"
+                    websiteName="Minecraft in Desmos"
+                >
+                    <FeatureCard title="Block Interaction" text="Interact with blocks using the mouse to place and break them." img={<AdsClickIcon style={{ color: 'white' }}/>}/>
+                    <FeatureCard title="Player Movement" text="Move and rotate the camera using joystick controls." img={<SportsEsportsIcon style={{ color: 'white' }}/>}/>
+                    <FeatureCard title="Inventory System" text="Choose from 35 different blocks to build with." img={<InventoryIcon style={{ color: 'white' }}/>}/>
+                    <FeatureCard title="Gravity/Flight" text="Toggle between flying and walking modes, with gravity applied in walking mode." img={<TransferWithinAStationIcon style={{ color: 'white' }}/>}/>
                 </Project>
                 <Divider style={{backgroundColor: "#444", width: "90%"}}/>
                 <Project 

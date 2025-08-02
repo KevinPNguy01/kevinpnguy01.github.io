@@ -6,7 +6,7 @@ export function Experience(props) {
     const { title, organization, duration, companyLogo, children, imgs, tags } = props;
 
     return (
-        <section className="flex flex-wrap lg:grid lg:grid-cols-2 md:gap-2 gap-6 items-center">
+        <section className="flex flex-wrap lg:grid lg:grid-cols-2 md:gap-2 gap-6 items-center w-full">
             <div className="w-full flex flex-col md:gap-2 gap-6">
                 <div className="w-full flex flex-row gap-6">
                     <img className="shadow-md shadow-black rounded-full h-16 w-16 md:h-20 md:w-20 border-2 border-neutral-600" src={companyLogo}/>
