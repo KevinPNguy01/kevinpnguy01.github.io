@@ -101,6 +101,8 @@ import InventoryIcon from '@mui/icons-material/Inventory';
 import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
 import TransferWithinAStationIcon from '@mui/icons-material/TransferWithinAStation';
 
+import CreditCardIcon from '@mui/icons-material/CreditCard';
+
 function App() {
     return (
         <div className="w-full px-[5%] md:px-[15%]">
@@ -119,6 +121,7 @@ function App() {
                     imgs={[]}
                     tags={[]}
                 >
+                    <FeatureCard title="Payment Integration" text="Built full-stack payment integration, developing UI components and backend API calls using Stripe to support multiple payment options." img={<CreditCardIcon style={{ color: 'white' }}/>}/>
                 </Experience>
                 <Divider style={{backgroundColor: "#444", width: "90%"}}/>
                 <Experience

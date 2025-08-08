@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 
 export function FeatureList(props) {
     const ref = useRef(null);
@@ -20,7 +20,7 @@ export function FeatureList(props) {
                 }
             }}
         >
-            {props.children?.map((child, index) => (
+            {React.Children.map(props.children, (child, index) => (
                 <div 
                     key={index} 
                     className={`transition-[background-color,border-color] border-[2px] ease-linear duration-200 w-2/3 md:w-full snap-start shrink-0 rounded-xl md:bg-transparent md:border-transparent ${index === focus ? "bg-neutral-500/10 border-white/10" : "border-transparent"}`}
