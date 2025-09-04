@@ -102,6 +102,8 @@ import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
 import TransferWithinAStationIcon from '@mui/icons-material/TransferWithinAStation';
 
 import CreditCardIcon from '@mui/icons-material/CreditCard';
+import SpeedIcon from '@mui/icons-material/Speed';
+import TranslateIcon from '@mui/icons-material/Translate';
 
 function App() {
     return (
@@ -121,7 +123,9 @@ function App() {
                     imgs={[]}
                     tags={[]}
                 >
-                    <FeatureCard title="Payment Integration" text="Built full-stack payment integration, developing UI components and backend API calls using Stripe to support multiple payment options." img={<CreditCardIcon style={{ color: 'white' }}/>}/>
+                    <FeatureCard title="Payment Integration" text="Engineered a full-stack multi-payment management system using Stripe/Recurly, enhancing payment flexibility." img={<CreditCardIcon style={{ color: 'white' }}/>}/>
+                    <FeatureCard title="Translation Support" text="Enabled site compatibility with built-in translation tools, improving accessibility for 70% of users outside the US." img={<TranslateIcon style={{ color: 'white' }}/>}/>
+                    <FeatureCard title="Admin Dashboard" text="Built an admin dashboard to manage server options, streamlining subscription configuration for administrators." img={<SpeedIcon style={{ color: 'white' }}/>}/>
                 </Experience>
                 <Divider style={{backgroundColor: "#444", width: "90%"}}/>
                 <Experience
