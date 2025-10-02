@@ -104,6 +104,7 @@ import TransferWithinAStationIcon from '@mui/icons-material/TransferWithinAStati
 import CreditCardIcon from '@mui/icons-material/CreditCard';
 import SpeedIcon from '@mui/icons-material/Speed';
 import TranslateIcon from '@mui/icons-material/Translate';
+import PaymentMethodsPage from '/assets/experience/briviant/payment_methods_page.png';
 
 function App() {
     return (
@@ -120,7 +121,7 @@ function App() {
                     organization="Briviant • Internship"
                     duration="Aug 2025 - Present"
                     companyLogo={BriviantLogo}
-                    imgs={[]}
+                    imgs={[PaymentMethodsPage]}
                     tags={[]}
                 >
                     <FeatureCard title="Payment Integration" text="Engineered a full-stack multi-payment management system using Stripe/Recurly, enhancing payment flexibility." img={<CreditCardIcon style={{ color: 'white' }}/>}/>
