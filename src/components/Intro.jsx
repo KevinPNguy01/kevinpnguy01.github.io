@@ -34,7 +34,7 @@ export function Intro() {
                 <h2 className="text-white text-md md:text-md font-semibold">Introduction</h2>
                 <h1 className="text-white text-4xl md:text-6xl font-bold">Kevin Nguy</h1>
                 <p className="text-neutral-400 text-md md:text-lg font-semibold md:whitespace-pre-line">
-                    {`I am a current third year studying computer science at UC Irvine.
+                    {`I am a current fourth year studying computer science at UC Irvine.
                     My interests include web development, artificial intelligence, 
                     machine learning, and computer graphics.`}
                 </p>
