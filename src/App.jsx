@@ -243,6 +243,7 @@ function App() {
                     <FeatureCard title="PWM-based Audio Output" text="Real-time sound synthesis supports 8-note polyphony, 4 selectable waveforms, and up to 9 different songs." img={<MusicNoteIcon style={{ color: 'white' }}/>}/>
                     <FeatureCard title="Live Information Display" text="Integrated 16x2 LCD displays song metadata, playback time, and scrolling text for titles and artist names." img={<TvIcon style={{ color: 'white' }}/>}/>
                     <FeatureCard title="Interactive Controls" text="4x4 matrix keypad allows for song selection, playback controls, and waveform switching." img={<KeyboardIcon style={{ color: 'white' }}/>}/>
+                    <FeatureCard title="LED Waveform Indicators" text="4 LED indicators provide visual feedback for the selected waveform: sine, triangle, sawtooth, or square." img={<LightbulbIcon style={{ color: 'white' }}/>}/>   
                 </Project>
                 <Divider style={{backgroundColor: "#444", width: "90%"}}/>
                 <Project 
