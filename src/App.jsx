@@ -66,7 +66,9 @@ import WhereDidTheWeeksGoImg from "/assets/projects/life_in_weeks.png";
 import ModelScope3DImg from "/assets/projects/ModelScope.PNG";
 import PathTracerImg from "/assets/projects/snorlax_path_traced.PNG";
 import VoxelGameImg from "/assets/projects/voxelgameengine.png";
-
+import MusicNoteIcon from '@mui/icons-material/MusicNote';
+import TvIcon from '@mui/icons-material/Tv';
+import KeyboardIcon from '@mui/icons-material/Keyboard';
 import AIBuilderThumbnail from '/assets/projects/mc_ai_builder/ai_builder_thumbnail.png';
 import Bee from '/assets/projects/mc_ai_builder/bee.png';
 import GenerationComplete from '/assets/projects/mc_ai_builder/generation_complete.png';
@@ -106,6 +108,11 @@ import SpeedIcon from '@mui/icons-material/Speed';
 import TranslateIcon from '@mui/icons-material/Translate';
 import AccountSettingsPage from '/assets/experience/briviant/account_settings_page.png';
 import PaymentMethodsPage from '/assets/experience/briviant/payment_methods_page.png';
+
+import MIDIHardwareSetup from '/assets/projects/bare_metal_midi/bare_metal_midi.jpg';
+import MIDIHardwareSetup2 from '/assets/projects/bare_metal_midi/bare_metal_midi_2.jpg';
+import MIDIDiagram from '/assets/projects/bare_metal_midi/diagram_lcd.png';
+import MIDIDiagramLayered from '/assets/projects/bare_metal_midi/diagram_layered.png';
 
 function App() {
     return (
@@ -223,6 +230,19 @@ function App() {
                     <FeatureCard title="Personalized Lifespan" text="Enter in your own birthdate and life expectancy to see the weeks that represents your own life." img={<CakeIcon style={{ color: 'white' }}/>}/>
                     <FeatureCard title="Daily Activities" text="Input activities performed daily to see their impact on the weeks you have left." img={<DirectionsRunIcon style={{ color: 'white' }}/>}/>
                     <FeatureCard title="Custom Colors" text="Customize your calendar by setting colors for each daily activity." img={<PaletteIcon style={{ color: 'white' }}/>}/>
+                </Project>
+                <Divider style={{backgroundColor: "#444", width: "90%"}}/>
+                <Project
+                    title="Bare Metal MIDI Player"
+                    description="A bare-metal MIDI player built on a Tiva C Series microcontroller."
+                    repoName="Bare-Metal-MIDI-Player"
+                    repoLink="https://github.com/KevinPNguy01/Bare-Metal-MIDI-Player"
+                    imgs={[MIDIHardwareSetup, MIDIHardwareSetup2, MIDIDiagram, MIDIDiagramLayered]}
+                    tags={["C", "Embedded Systems", "Tiva C Series"]}
+                >
+                    <FeatureCard title="PWM-based Audio Output" text="Real-time sound synthesis supports 8-note polyphony, 4 selectable waveforms, and up to 9 different songs." img={<MusicNoteIcon style={{ color: 'white' }}/>}/>
+                    <FeatureCard title="Live Information Display" text="Integrated 16x2 LCD displays song metadata, playback time, and scrolling text for titles and artist names." img={<TvIcon style={{ color: 'white' }}/>}/>
+                    <FeatureCard title="Interactive Controls" text="4x4 matrix keypad allows for song selection, playback controls, and waveform switching." img={<KeyboardIcon style={{ color: 'white' }}/>}/>
                 </Project>
                 <Divider style={{backgroundColor: "#444", width: "90%"}}/>
                 <Project 
