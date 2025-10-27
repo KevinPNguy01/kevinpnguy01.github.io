@@ -1,7 +1,7 @@
-import { IconButton } from "@mui/material";
-import { use, useEffect, useMemo, useRef, useState } from "react";
-import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
+import NavigateNextIcon from '@mui/icons-material/NavigateNext';
+import { IconButton } from "@mui/material";
+import { useEffect, useRef, useState } from "react";
 
 export function ImageSlides({ imgs }) {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -51,20 +51,49 @@ export function ImageSlides({ imgs }) {
         return () => resizeObserver.disconnect();
     }, [aspectRatio]);
 
+    useEffect(() => {
+        for (let i = 0; i < imgs.length; i++) {
+            const media = imgs[i];
+            if (media.endsWith('.mp4')) {
+                const videoElement = document.getElementById(`video-slide-${i}`);
+                if (i === currentIndex) {
+                    videoElement.play();
+                } else {
+                    videoElement.pause();
+                    videoElement.currentTime = 0;
+                }
+            }
+        }
+    }, [currentIndex]);
+
     return (
         <div
             ref={ref}
             className="overflow-hidden relative w-full flex items-center justify-center rounded-xl bg-black/20"
         >
-            {imgs.map((_, index) => (
-                <img
-                    className={`object-cover ${index === currentIndex ? '' : 'hidden'}`}
-                    src={imgs[index]}
-                    style={width > 0 ? {
-                        height: `${height}px`,
-                        width: `${width}px`,
-                    } : {}}
-                />
+            {imgs.map((media, index) => (
+                !media.endsWith('.mp4') ? (
+                    <img
+                        className={`object-cover ${index === currentIndex ? '' : 'hidden'}`}
+                        src={media}
+                        style={width > 0 ? {
+                            height: `${height}px`,
+                            width: `${width}px`,
+                        } : {}}
+                    /> 
+                ) : (
+                    <video
+                        id={`video-slide-${index}`}
+                        className={`object-cover ${index === currentIndex ? '' : 'hidden'}`}
+                        style={width > 0 ? {
+                            height: `${height}px`,
+                            width: `${width}px`,
+                        } : {}}
+                        controls
+                    >
+                        <source src={media} type="video/mp4" />
+                    </video>
+                )
             ))}
             <IconButton
                 className={`${currentIndex === 0 ? "opacity-0" : ""} bg-neutral-500/20! backdrop-filter backdrop-blur-sm p-1! absolute! left-1 top-1/2 transform -translate-y-1/2`}
