@@ -14,11 +14,13 @@ import FilterAltIcon from '@mui/icons-material/FilterAlt';
 import GpsFixedIcon from '@mui/icons-material/GpsFixed';
 import HighlightIcon from '@mui/icons-material/Highlight';
 import InsertDriveFileIcon from '@mui/icons-material/InsertDriveFile';
+import KeyboardIcon from '@mui/icons-material/Keyboard';
 import LightbulbIcon from '@mui/icons-material/Lightbulb';
 import LocalFireDepartmentIcon from '@mui/icons-material/LocalFireDepartment';
 import MapIcon from '@mui/icons-material/Map';
 import ModelTrainingIcon from '@mui/icons-material/ModelTraining';
 import MouseIcon from '@mui/icons-material/Mouse';
+import MusicNoteIcon from '@mui/icons-material/MusicNote';
 import PaletteIcon from '@mui/icons-material/Palette';
 import PsychologyIcon from '@mui/icons-material/Psychology';
 import SearchIcon from '@mui/icons-material/Search';
@@ -30,6 +32,7 @@ import TerrainIcon from '@mui/icons-material/Terrain';
 import TextureIcon from '@mui/icons-material/Texture';
 import ThreeSixtyIcon from '@mui/icons-material/ThreeSixty';
 import TransformIcon from '@mui/icons-material/Transform';
+import TvIcon from '@mui/icons-material/Tv';
 import ViewInArIcon from '@mui/icons-material/ViewInAr';
 import WifiIcon from '@mui/icons-material/Wifi';
 import { Divider } from '@mui/material';
@@ -63,12 +66,6 @@ import VerticalScan from '/assets/projects/3d_model_reconstruction/vertical_scan
 import EaterEnrollmentImg from "/assets/projects/eaterenrollment.png";
 import LifeCalendarsImg from "/assets/projects/life_calendars.png";
 import WhereDidTheWeeksGoImg from "/assets/projects/life_in_weeks.png";
-import ModelScope3DImg from "/assets/projects/ModelScope.PNG";
-import PathTracerImg from "/assets/projects/snorlax_path_traced.PNG";
-import VoxelGameImg from "/assets/projects/voxelgameengine.png";
-import MusicNoteIcon from '@mui/icons-material/MusicNote';
-import TvIcon from '@mui/icons-material/Tv';
-import KeyboardIcon from '@mui/icons-material/Keyboard';
 import AIBuilderThumbnail from '/assets/projects/mc_ai_builder/ai_builder_thumbnail.png';
 import Bee from '/assets/projects/mc_ai_builder/bee.png';
 import GenerationComplete from '/assets/projects/mc_ai_builder/generation_complete.png';
@@ -76,6 +73,9 @@ import GenerationInProgress from '/assets/projects/mc_ai_builder/generation_in_p
 import GreekStatue from '/assets/projects/mc_ai_builder/greek_statue.png';
 import IronManHelmet from '/assets/projects/mc_ai_builder/iron_man_helmet.png';
 import SteampunkAirship from '/assets/projects/mc_ai_builder/steampunk_airship.png';
+import ModelScope3DImg from "/assets/projects/ModelScope.PNG";
+import PathTracerImg from "/assets/projects/snorlax_path_traced.PNG";
+import VoxelGameImg from "/assets/projects/voxelgameengine.png";
 
 import AICompanionThumbnail from '/assets/projects/mc_ai_companion/ai_companion_thumbnail.jpg';
 import Conversation from '/assets/projects/mc_ai_companion/conversation.png';
@@ -110,9 +110,8 @@ import AccountSettingsPage from '/assets/experience/briviant/account_settings_pa
 import PaymentMethodsPage from '/assets/experience/briviant/payment_methods_page.png';
 
 import MIDIHardwareSetup from '/assets/projects/bare_metal_midi/bare_metal_midi.jpg';
-import MIDIHardwareSetup2 from '/assets/projects/bare_metal_midi/bare_metal_midi_2.jpg';
-import MIDIDiagram from '/assets/projects/bare_metal_midi/diagram_lcd.png';
 import MIDIDiagramLayered from '/assets/projects/bare_metal_midi/diagram_layered.png';
+import MIDIDiagram from '/assets/projects/bare_metal_midi/diagram_lcd.png';
 
 function App() {
     return (
@@ -237,7 +236,15 @@ function App() {
                     description="A bare-metal MIDI player built on a Tiva C Series microcontroller."
                     repoName="Bare-Metal-MIDI-Player"
                     repoLink="https://github.com/KevinPNguy01/Bare-Metal-MIDI-Player"
-                    imgs={[MIDIHardwareSetup, MIDIHardwareSetup2, MIDIDiagram, MIDIDiagramLayered]}
+                    imgs={[
+                        MIDIHardwareSetup, 
+                        "/assets/projects/bare_metal_midi/midi_fireworks_festival_output.mp4",
+                        "/assets/projects/bare_metal_midi/midi_gravity_falls_output.mp4",
+                        "/assets/projects/bare_metal_midi/midi_we_dont_talk_anymore_output.mp4",
+                        "/assets/projects/bare_metal_midi/midi_spider_dance_output.mp4",
+                        MIDIDiagram, 
+                        MIDIDiagramLayered
+                    ]}
                     tags={["C", "Embedded Systems", "Tiva C Series"]}
                 >
                     <FeatureCard title="PWM-based Audio Output" text="Real-time sound synthesis supports 8-note polyphony, 4 selectable waveforms, and up to 9 different songs." img={<MusicNoteIcon style={{ color: 'white' }}/>}/>
