@@ -130,7 +130,7 @@ function App() {
                     duration="Aug 2025 - Present"
                     companyLogo={BriviantLogo}
                     imgs={[PaymentMethodsPage, PrepaidCreditPage, AccountSettingsPage]}
-                    tags={[]}
+                    tags={["Next.js", "TypeScript", "PostgreSQL", "Sentry", "Amplitude"]}
                 >
                     <FeatureCard title="Payment Integration" text="Engineered a full-stack multi-payment management system using Stripe/Recurly, enhancing payment flexibility." img={<CreditCardIcon style={{ color: 'white' }}/>}/>
                     <FeatureCard title="Translation Support" text="Enabled site compatibility with built-in translation tools, improving accessibility for 70% of users outside the US." img={<TranslateIcon style={{ color: 'white' }}/>}/>
