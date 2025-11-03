@@ -133,6 +133,7 @@ function App() {
                     tags={["Next.js", "TypeScript", "PostgreSQL", "Sentry", "Amplitude"]}
                 >
                     <FeatureCard title="Payment Integration" text="Engineered a full-stack multi-payment management system using Stripe/Recurly, enhancing payment flexibility." img={<CreditCardIcon style={{ color: 'white' }}/>}/>
+                    <FeatureCard title="Data Migration" text="Migrated subscription plan data from JSON schema to a structured SQL database for improved maintainability." img={<StorageIcon style={{ color: 'white' }}/>}/>
                     <FeatureCard title="Translation Support" text="Enabled site compatibility with built-in translation tools, improving accessibility for 70% of users outside the US." img={<TranslateIcon style={{ color: 'white' }}/>}/>
                     <FeatureCard title="Admin Dashboard" text="Built an admin dashboard to manage server options, streamlining subscription configuration for administrators." img={<SpeedIcon style={{ color: 'white' }}/>}/>
                 </Experience>
