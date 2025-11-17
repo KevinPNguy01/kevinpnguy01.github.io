@@ -6,7 +6,7 @@ export function FeatureList(props) {
   return (
     <div
       ref={ref}
-      className="thin-scroll pb-1 md:pb-0 flex flex-row flex-nowrap md:flex-col gap-4 w-full overflow-x-auto snap-x snap-mandatory"
+      className="thin-scroll pb-1 md:pb-0 flex flex-row flex-nowrap md:flex-col gap-2 w-full overflow-x-auto snap-x snap-mandatory"
       onScroll={() => {
         let index = 0;
         let min_x = ref.current.clientWidth;
