@@ -74,6 +74,7 @@ export function ImageSlides({ imgs }) {
       {imgs.map((media, index) =>
         !media.endsWith(".mp4") ? (
           <img
+            key={index}
             className={`object-cover ${index === currentIndex ? "" : "hidden"}`}
             src={media}
             style={
@@ -87,6 +88,7 @@ export function ImageSlides({ imgs }) {
           />
         ) : (
           <video
+            key={index}
             id={`video-slide-${index}`}
             className={`object-cover ${index === currentIndex ? "" : "hidden"}`}
             style={
