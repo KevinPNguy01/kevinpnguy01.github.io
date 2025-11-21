@@ -110,6 +110,8 @@ import TranslateIcon from "@mui/icons-material/Translate";
 import AccountSettingsPage from "/assets/experience/briviant/account_settings_page.png";
 import PaymentMethodsPage from "/assets/experience/briviant/payment_methods_page.png";
 import PrepaidCreditPage from "/assets/experience/briviant/prepaid_credit_page.png";
+import NotificationsPage from "/assets/experience/briviant/notifications_page.png";
+import InvoicePage from "/assets/experience/briviant/invoice_page.png";
 
 import MIDIHardwareSetup from "/assets/projects/bare_metal_midi/bare_metal_midi.jpg";
 import MIDIDiagramLayered from "/assets/projects/bare_metal_midi/diagram_layered.png";
@@ -133,7 +135,13 @@ function App() {
           organization="Briviant • Internship"
           duration="Aug 2025 - Present"
           companyLogo={BriviantLogo}
-          imgs={[PaymentMethodsPage, PrepaidCreditPage, AccountSettingsPage]}
+          imgs={[
+            PaymentMethodsPage,
+            InvoicePage,
+            NotificationsPage,
+            PrepaidCreditPage,
+            AccountSettingsPage,
+          ]}
           tags={["Next.js", "TypeScript", "PostgreSQL", "Sentry", "Amplitude"]}
         >
           <FeatureCard
