@@ -103,8 +103,9 @@ import InventoryIcon from "@mui/icons-material/Inventory";
 import SportsEsportsIcon from "@mui/icons-material/SportsEsports";
 import TransferWithinAStationIcon from "@mui/icons-material/TransferWithinAStation";
 
-import CreditCardIcon from "@mui/icons-material/CreditCard";
-import SpeedIcon from "@mui/icons-material/Speed";
+import PaymentsIcon from "@mui/icons-material/Payments";
+import ReceiptIcon from "@mui/icons-material/Receipt";
+import InboxIcon from "@mui/icons-material/Inbox";
 import TranslateIcon from "@mui/icons-material/Translate";
 import AccountSettingsPage from "/assets/experience/briviant/account_settings_page.png";
 import PaymentMethodsPage from "/assets/experience/briviant/payment_methods_page.png";
@@ -136,24 +137,30 @@ function App() {
           tags={["Next.js", "TypeScript", "PostgreSQL", "Sentry", "Amplitude"]}
         >
           <FeatureCard
-            title="Payment Integration"
-            text="Engineered a full-stack multi-payment management system using Stripe/Recurly, enhancing payment flexibility."
-            img={<CreditCardIcon style={{ color: "white" }} />}
+            title="Multi-Payment System"
+            text="Engineered a multi-payment management system using Stripe/Recurly, enhancing payment flexibility and securely storing 1,000+ payment methods per month."
+            img={<PaymentsIcon style={{ color: "white" }} />}
           />
           <FeatureCard
-            title="Data Migration"
-            text="Migrated subscription plan data from JSON schema to a structured SQL database for improved maintainability."
-            img={<StorageIcon style={{ color: "white" }} />}
+            title="Invoice Payments"
+            text="Developed a one-time payment feature for overdue invoices, reducing payment friction for users and processing $1,300+ of payments per week."
+            img={<ReceiptIcon style={{ color: "white" }} />}
+          />
+          <FeatureCard
+            title="Notification Inbox"
+            text="Built a notification inbox system delivering alerts such as overdue invoices and email verification, generating 1,100+ weekly notification impressions."
+            img={<InboxIcon style={{ color: "white" }} />}
           />
           <FeatureCard
             title="Translation Support"
-            text="Enabled site compatibility with built-in translation tools, improving accessibility for 70% of users outside the US."
+            text="Enabled browser translation support, improving accessibility for 70% of users based outside of the US."
             img={<TranslateIcon style={{ color: "white" }} />}
           />
           <FeatureCard
-            title="Admin Dashboard"
-            text="Built an admin dashboard to manage server options, streamlining subscription configuration for administrators."
-            img={<SpeedIcon style={{ color: "white" }} />}
+            title="Data Migration"
+            text="Migrated subscription plan data from JSON schema to a structured SQL database for improved maintainability.
+"
+            img={<StorageIcon style={{ color: "white" }} />}
           />
         </Experience>
         <Divider style={{ backgroundColor: "#444", width: "90%" }} />
