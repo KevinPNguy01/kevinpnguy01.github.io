@@ -151,7 +151,7 @@ function App() {
           />
           <FeatureCard
             title="Invoice Payments"
-            text="Developed a one-time payment feature for overdue invoices, reducing payment friction for users and processing $1,300+ of payments per week."
+            text="Developed a one-time payment feature for overdue invoices, reducing payment friction for users and processing $800+ of payments per week."
             img={<ReceiptIcon style={{ color: "white" }} />}
           />
           <FeatureCard
