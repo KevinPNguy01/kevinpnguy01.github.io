@@ -133,7 +133,7 @@ function App() {
         <Experience
           title="Software Developer Intern"
           organization="Briviant • Internship"
-          duration="Aug 2025 - Present"
+          duration="Aug 2025 - Dec 2025"
           companyLogo={BriviantLogo}
           imgs={[
             PaymentMethodsPage,
