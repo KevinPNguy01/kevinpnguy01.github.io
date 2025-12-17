@@ -117,6 +117,8 @@ import MIDIHardwareSetup from "/assets/projects/bare_metal_midi/bare_metal_midi.
 import MIDIDiagramLayered from "/assets/projects/bare_metal_midi/diagram_layered.png";
 import MIDIDiagram from "/assets/projects/bare_metal_midi/diagram_lcd.png";
 
+import ZipRecruiterLogo from "/assets/experience/ziprecruiter/ziprecruiter_logo.png";
+
 function App() {
   return (
     <div className="w-full px-[5%] md:px-[15%]">
@@ -130,6 +132,13 @@ function App() {
         id="experience-section"
         className="flex flex-col py-8 gap-8 items-center"
       >
+        <Experience
+          title="Software Engineer II"
+          organization="ZipRecruiter • Full-time"
+          duration="Starting June 2026"
+          companyLogo={ZipRecruiterLogo}
+        ></Experience>
+        <Divider style={{ backgroundColor: "#444", width: "90%" }} />
         <Experience
           title="Software Developer Intern"
           organization="Briviant • Internship"
